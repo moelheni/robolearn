@@ -75,10 +75,12 @@ export default function QaPhase() {
                 topic.slides[slideIndex].text
               }
             </StoryWrapper>
-
-            <ContentButtonWrapper>
-              <Button onClick={finishedReading} variant="contained">J'ai fini de lire</Button>
-            </ContentButtonWrapper>
+            {
+              !showQuestions &&
+              <ContentButtonWrapper>
+                <Button onClick={finishedReading} variant="contained">J'ai fini de lire</Button>
+              </ContentButtonWrapper>
+            }
           </ContentWrapper>
         </ResizeHorizon  >
         <ResizeHorizon width="calc(100vw / 3)">

@@ -86,12 +86,18 @@ export default function EndQuiz() {
           </CardContent>
         </Card>
       </ChatMessage>
+      
+      {
+        Object.values(state).filter(e => !!e).length === 2 &&
+        <>
+          <ChatMessage text="Ok! Quand tu es pret appuie sur le bouton pour commencer la prochaine activité." />
 
-      <ChatMessage text="Ok! Quand tu es pret appuie sur le bouton pour commencer la prochaine activité." />
-
-      <ContentButtonWrapper>
-        <Button variant="contained" onClick={handleStart} disabled={Object.values(state).filter(e => !!e).length < 2}>Je commence</Button>
-      </ContentButtonWrapper>
+          <ContentButtonWrapper>
+            <Button variant="contained" onClick={handleStart} disabled={Object.values(state).filter(e => !!e).length < 2}>Je commence</Button>
+          </ContentButtonWrapper>
+        </>
+      }
+      
     </QuizWrapper>
   </div>
 }

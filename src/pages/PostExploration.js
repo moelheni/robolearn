@@ -1,14 +1,15 @@
+import { Button } from "@material-ui/core"
 import React from "react"
 import { Link, useParams } from "react-router-dom"
 import ChatMessage from "../components/ChatMessage"
 import { ContentButtonWrapper } from "../components/ContentWrapper"
 import { GifWrapper } from "../components/GifWrapper"
-import { Button } from "../components/Button"
+import { RoboMessage } from "../components/RoboMessage"
 
 export default function PreExplorationOutro() {
   let { id } = useParams();
 
-  return <div>
+  return <RoboMessage>
     <GifWrapper >
       <img src="/robot-danse-4-transparent.gif" />
     </GifWrapper>
@@ -16,9 +17,9 @@ export default function PreExplorationOutro() {
         big
         text="T'as presque fini! Avant de te dire au revoir, on va reprendre le quiz rapidement pour voir si on a appris de nouvelles choses. !" />
     <ContentButtonWrapper>
-      <Link to={`/spe-quiz/${id}/finished`}>
+      <Link to={`/spe-quiz/${id}`}>
         <Button variant="contained">Je commence</Button>
       </Link>
     </ContentButtonWrapper>
-  </div>
+  </RoboMessage>
 }

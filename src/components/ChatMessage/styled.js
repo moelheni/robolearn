@@ -5,7 +5,7 @@ export const ChatMessageHolder = styled(EaseUp)`
   display: flex;
   width: 100%;
   ${({ big }) => big && `
-   margin: auto;
+   margin: 0 auto;
    width: 45%;
    font-size: 1.2em;
   `}

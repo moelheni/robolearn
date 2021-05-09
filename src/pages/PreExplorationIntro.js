@@ -4,11 +4,12 @@ import ChatMessage from "../components/ChatMessage"
 import { ContentButtonWrapper } from "../components/ContentWrapper"
 import { GifWrapper } from "../components/GifWrapper"
 import { Button } from "../components/Button"
+import { RoboMessage } from "../components/RoboMessage"
 
 export default function PreExplorationIntro() {
   let { id } = useParams();
 
-  return <div>
+  return <RoboMessage>
     <GifWrapper>
       <img src="/robot-danse-2-transparent.gif" />
     </GifWrapper>
@@ -20,5 +21,5 @@ export default function PreExplorationIntro() {
         <Button variant="contained">Je commence</Button>
       </Link>
     </ContentButtonWrapper>
-  </div>
+  </RoboMessage>
 }

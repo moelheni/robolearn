@@ -1,23 +1,22 @@
 import React from "react"
-import { Link, useParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 import ChatMessage from "../components/ChatMessage"
 import { ContentButtonWrapper } from "../components/ContentWrapper"
+import { RoboMessage } from "../components/RoboMessage"
 import { GifWrapper } from "../components/GifWrapper"
 import { Button } from "../components/Button"
-import { RoboMessage } from "../components/RoboMessage"
 
 export default function PreExplorationOutro() {
-  let { id } = useParams();
 
   return <RoboMessage>
-    <GifWrapper >
-      <img src="/robot-danse-3-transparent.gif" />
-    </GifWrapper>
     <ChatMessage
         big
-        text="Super travail, on peut maintenant commencer l'exploration si tu es pret(e) !" />
+        text="Bonjour, moi c'est Toto et aujourd'hui on va faire quelques activités ensemble. On va découvrir de nouvelles choses et pouvoir poser autant de question qu'on veut.Dis-moi quand t'es pret et on va commencer !" />
+     <GifWrapper >
+      <img src="/robot-danse-2-transparent.gif" />
+    </GifWrapper>
     <ContentButtonWrapper>
-      <Link to={`/exploration/${id}`}>
+      <Link to={`/first-quiz/histoire-de-la-science`}>
         <Button variant="contained">Je commence</Button>
       </Link>
     </ContentButtonWrapper>

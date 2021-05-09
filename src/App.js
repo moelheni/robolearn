@@ -16,6 +16,7 @@ import PreExplorationIntro from "./pages/PreExplorationIntro";
 import PreExplorationOutro from "./pages/PreExplorationOutro";
 import Exploration from "./pages/Exploration";
 import PostExplorationIntroFinished from "./pages/PostExplorationIntroFinished";
+import Intro from "./pages/Intro";
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            <Redirect to="/first-quiz/histoire-de-la-science" />
+            <Intro />
           </Route>
           <Route path="/first-quiz/:id">
             <FirstQuiz />

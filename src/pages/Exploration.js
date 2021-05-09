@@ -18,7 +18,7 @@ export default function Exploration() {
 
   const subTopics = explorations[id]
 
-  const [selectedVideo, setSelectedVideo] = useState(subTopics[0].videos[0])
+  const [selectedVideo, setSelectedVideo] = useState()
 
   const [currSubTopics, setCurrSubTopics] = useState(subTopics)
 
@@ -27,6 +27,7 @@ export default function Exploration() {
   const [videoAdded, setVideoAdded] = useState(false)
   const [noVideoAdded, setNoVideoAdded] = useState(false)
   const [question, setQuestion] = useState("")
+  const [asqQuestion, setAskQuestion] = useState(false)
 
   const [redirectToPost, setRedirectToPost] = useState(false)
 
@@ -56,6 +57,7 @@ export default function Exploration() {
   const enableOptions = () => {
     setShowOptions(true)
     setShowChat(false)
+    setAskQuestion(false)
   }
   
 
@@ -64,6 +66,9 @@ export default function Exploration() {
       setRedirectToPost(true)
     }
     setShowChat(true)
+    setTimeout(() => {
+      setAskQuestion(true)
+    }, 5000)
     setVideoAdded(false)
     setNoVideoAdded(false)
   }
@@ -87,12 +92,15 @@ export default function Exploration() {
       return st
     }))
     setShowChat(false)
+    setAskQuestion(false)
     setShowOptions(false)
     setVideoAdded(true)
+    setSelectedVideo(null)
   }
 
   const handleNoQuestion = () => {
     setShowChat(false)
+    setAskQuestion(false)
     setShowOptions(false)
     setNoVideoAdded(true)
   }
@@ -144,16 +152,21 @@ export default function Exploration() {
             <ResizeHorizon width="calc(100vw / 8 * 4)">
               <ContentWrapper center>
                 <h1>Contenu</h1>
-                <VideoWrapper>
-                  <h2>{selectedVideo.label}</h2>
-                  {
-                    selectedVideo.yt &&
-                    <iframe width="560" height="315" src={`https://www.youtube.com/embed/${selectedVideo.yt}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  }
-                </VideoWrapper>
-                <ContentButtonWrapper>
-                  <Button onClick={enableChat} variant="contained">J'ai fini de visionner</Button>
-                </ContentButtonWrapper>
+                {
+                  selectedVideo &&
+                  <>
+                    <VideoWrapper>
+                      <h2>{selectedVideo.label}</h2>
+                      {
+                        selectedVideo.yt &&
+                        <iframe width="560" height="315" src={`https://www.youtube.com/embed/${selectedVideo.yt}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      }
+                    </VideoWrapper>
+                    <ContentButtonWrapper>
+                      <Button onClick={enableChat} variant="contained">J'ai fini de visionner</Button>
+                    </ContentButtonWrapper>
+                  </>
+                }
               </ContentWrapper>
             </ResizeHorizon>
             <ResizeHorizon width="calc(100vw / 8 * 3)">
@@ -234,20 +247,26 @@ export default function Exploration() {
                     </Card>
                   </EaseUp>
 
-                  <ChatMessage text={
-                    `Mais pour ça, tu dois tout d'abord me poser une question par rapport à la vidéo que tu viens de voir.`
-                  } />
+                  {
+                    asqQuestion &&
+                    <>
+                      <ChatMessage text={
+                        `Mais pour ça, tu dois tout d'abord me poser une question par rapport à la vidéo que tu viens de voir.`
+                      } />
 
-                  <ChatMessage text={
-                    `Si t'en as plusieurs, sépare-les avec des virgules.`
-                  } />
+                      <ChatMessage text={
+                        `Si t'en as plusieurs, sépare-les avec des virgules.`
+                      } />
 
-                  <TextField onChange={handleQuestionChange} id="standard-basic" label="Mets ta question ici" fullWidth />
+                      <TextField onChange={handleQuestionChange} id="standard-basic" label="Mets ta question ici" fullWidth />
 
-                  <ContentButtonWrapper>
-                    <Button onClick={enableOptions} ariant="contained" disabled={!question}>Soumettre ma question</Button>
-                    <Button primary onClick={handleNoQuestion}>Je n'ai pas de questions</Button>
-                  </ContentButtonWrapper>
+                      <ContentButtonWrapper>
+                        <Button onClick={enableOptions} ariant="contained" disabled={!question}>Soumettre ma question</Button>
+                        <Button primary onClick={handleNoQuestion}>Je n'ai pas de questions</Button>
+                      </ContentButtonWrapper>
+                    </>
+                  }
+
                 </AgentSpace>
               }
               {
