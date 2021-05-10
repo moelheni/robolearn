@@ -1,5 +1,5 @@
 import { Card, CardContent, Checkbox, FormControlLabel, LinearProgress, TextField } from "@material-ui/core";
-import React, { useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import Resize from "react-resize-layout/dist/Resize";
 import ResizeHorizon from "react-resize-layout/dist/ResizeHorizon";
 import ResizeVertical from "react-resize-layout/dist/ResizeVertical";
@@ -8,19 +8,23 @@ import ChatMessage from "../components/ChatMessage";
 import ContentWrapper, { ContentButtonWrapper } from "../components/ContentWrapper";
 import { AgentSpace, NavVideosWrapper, NavVideoWrapper, SubTopicList, SubTopicNavWrapper, SubTopicWrapper, VideoWrapper } from "../components/ExplorationUI";
 import { ProgressHeader, ProgressWrapper } from "../components/Progress";
-import explorations from "../data/explorations";
+import { getVideos } from "../data/explorations";
 import { topicLabels } from "../data/topics";
 import { Button } from "../components/Button"
 import { EaseUp } from "../components/EaseUp";
 
 export default function Exploration() {
   let { id } = useParams();
+  const videoRef = useRef();
+  const previousUrl = useRef('');
 
-  const subTopics = explorations[id]
+ 
+
+  const [subTopics, setSubTopics] = useState(null)
 
   const [selectedVideo, setSelectedVideo] = useState()
 
-  const [currSubTopics, setCurrSubTopics] = useState(subTopics)
+  const [currSubTopics, setCurrSubTopics] = useState()
 
   const [showOptions, setShowOptions] = useState(false)
   const [showChat, setShowChat] = useState(false)
@@ -31,19 +35,43 @@ export default function Exploration() {
 
   const [redirectToPost, setRedirectToPost] = useState(false)
 
+  useEffect(() => {
+    ;(async () => {
+      const explorations = await getVideos()
+      setSubTopics( explorations[id])
+      setCurrSubTopics( explorations[id] )
+    })()
+  }, [id])
+
+
+  useEffect(() => {
+    if (selectedVideo) {
+      if (previousUrl.current === selectedVideo.vd) {
+        return;
+      }
+  
+      if (videoRef.current) {
+        videoRef.current.load();
+      }
+  
+      previousUrl.current = selectedVideo.vd;
+    }
+  }, [selectedVideo]);
+
+  if (!subTopics || !currSubTopics) return null
 
   const handleQuestionChange = (e) => {
     setQuestion(e.target.value)
   }
 
-  const countItems = currSubTopics.map(st => {
-    return st.videos.length 
+  const countItems = Object.keys(currSubTopics).map(st => {
+    return currSubTopics[st].length 
   }).reduce((ac, e) => {
     return ac + e
   }, 0)
 
-  const doneItems = currSubTopics.map(st => {
-    return st.videos.filter(v => v.show).length 
+  const doneItems = Object.keys(currSubTopics).map(st => {
+    return currSubTopics[st].filter(v => v.show).length 
   }).reduce((ac, e) => {
     return ac + e
   }, 0)
@@ -74,23 +102,19 @@ export default function Exploration() {
   }
 
   const addVideo = (subTopic, video) => {
-    setCurrSubTopics(currSubTopics.map(st => {
-      if (st.subTopic === subTopic.subTopic) {
-        return {
-          ...st,
-          videos: st.videos.map(v => {
-            if (v.label === video.label) {
-              return {
-                ...v,
-                show: true
-              }
-            }
-            return v
-          })
+    setCurrSubTopics({
+      ...currSubTopics,
+      [subTopic]: currSubTopics[subTopic].map(v => {
+        if (v.label === video.label) {
+          return {
+            ...v,
+            show: true
+          }
+        } else {
+          return v
         }
-      }
-      return st
-    }))
+      })
+    })
     setShowChat(false)
     setAskQuestion(false)
     setShowOptions(false)
@@ -129,12 +153,13 @@ export default function Exploration() {
                 <h1>pour <strong>{topicLabels[id]}</strong></h1>
 
                 {
-                  currSubTopics.map(st => {
+                  Object.keys(currSubTopics).map(key => {
+                    const st = currSubTopics[key]
                     return <SubTopicWrapper>
-                      <h2>{st.subTopic}</h2>
+                      <h2>{key}</h2>
                       <NavVideosWrapper>
                         {
-                          st.videos.map(v => {
+                          st.map(v => {
                             if (v.show) {
                               return <NavVideoWrapper onClick={() => handleNav(v)}>
                                 <img src={v.icon} />
@@ -163,7 +188,7 @@ export default function Exploration() {
                       }
                       {
                         selectedVideo.vd &&
-                        <video width="560" height="315" controls>
+                        <video ref={videoRef} width="560" height="315" controls>
                           <source src={selectedVideo.vd} type="video/mp4" />
                         </video>
                       }
@@ -187,20 +212,21 @@ export default function Exploration() {
                       <CardContent>
                         
                         {
-                          currSubTopics.map(st => {
-                            if (st.videos.filter(v => !v.show).length) {
+                          Object.keys(currSubTopics).map(key => {
+                            const st = currSubTopics[key]
+                            if (st.filter(v => !v.show).length) {
                               return <div>
                                 <p>
-                                  Theme: {st.subTopic}
+                                  Theme: {key}
                                 </p>
                                 <ul>
                                   {
-                                    st.videos.map(v => {
+                                    st.map(v => {
                                       if (!v.show) {
                                         return <FormControlLabel
                                         control={
                                           <Checkbox color="primary"
-                                            onChange={() => addVideo(st, v)}
+                                            onChange={() => addVideo(key, v)}
                                             name="gilad" />
                                         }
                                         label={v.label}
@@ -229,15 +255,16 @@ export default function Exploration() {
                       <CardContent>
                         <SubTopicList>
                             {
-                              currSubTopics.map(st => {
-                                if (st.videos.filter(v => !v.show).length) {
+                              Object.keys(currSubTopics).map(key => {
+                                const st = currSubTopics[key]
+                                if (st.filter(v => !v.show).length) {
                                   return <div>
                                     <p>
-                                      Theme: {st.subTopic}
+                                      Theme: {key}
                                     </p>
                                     <ul>
                                       {
-                                        st.videos.map(v => {
+                                        st.map(v => {
                                           if (!v.show) {
                                             return <li>{v.label}</li>
                                           }

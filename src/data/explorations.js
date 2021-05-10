@@ -1,73 +1,94 @@
+import Papa from 'papaparse';
+
+import { topicKeys, topicLabels } from "./topics"
+ 
+export const getVideos = async () => {
+  const response = await fetch('/videos.csv')
+  let reader = response.body.getReader();
+  let decoder = new TextDecoder('utf-8');
+
+  const result = await reader.read()
+  const decodedData = decoder.decode(result.value);
+  const { data: csvData } = await Papa.parse(decodedData)
+
+  return csvData.slice(1).reduce((ac, e) => {
+    const topicKey = topicKeys[e[0].trim()]
+    const subTopicKey = e[1]
+
+    console.log(e[0], topicKey, e[1], ac[topicKey])
+
+    if ( ac[topicKey] ) {
+      if (ac[topicKey][subTopicKey]) {
+        return {
+          ...ac,
+          [topicKey]: {
+            ...ac[topicKey],
+            [subTopicKey] : [
+              ...ac[topicKey][subTopicKey],
+              {
+                label: e[2],
+                icon: `/pics-intervention-expl/${e[0]}/${e[2].replace(/'/g, '_')}.jpg`,
+                vd: `/videos/${e[2].replace(/'/g, '_')}.mp4`,
+                show: e[5].toLowerCase() === 'oui'
+              }
+            ]
+          }
+        }
+      } else {
+        return {
+          ...ac,
+          [topicKey]: {
+            ...ac[topicKey],
+            [subTopicKey] : [
+              {
+                label: e[2],
+                icon: `/pics-intervention-expl/${e[0]}/${e[2].replace(/'/g, '_')}.jpg`,
+                vd: `/videos/${e[2].replace(/'/g, '_')}.mp4`,
+                show: e[5].toLowerCase() === 'oui'
+              }
+            ]
+          }
+        }
+      }
+    } else {
+      return {
+        ...ac,
+        [topicKey]: {
+          [subTopicKey]: [
+            {
+              label: e[2],
+              icon: `/pics-intervention-expl/${e[0]}/${e[2].replace(/'/g, '_')}.jpg`,
+              vd: `/videos/${e[2].replace(/'/g, '_')}.mp4`,
+              show: e[5].toLowerCase() === 'oui'
+            }
+          ]
+        }
+      }
+    }
+  }, {})
+} 
+
 export default {
- "robotique-ia": [
-   {
-     subTopic: "Composition d'un robot",
-     videos: [
+ "robotique-ia": {
+     "Composition d'un robot": [
        {
          label: "Définition de la robotique",
          icon: "/pics-intervention-expl/Les robots intelligents/Définition de la robotique.jpg",
-         vd: "/file_example_MP4_480_1_5MG.mp4",
+         vd: "/videos/Définition de la robotique.mp4",
          show: true
        },
        {
         label: "Composants principaux d'un robot",
         icon: "/pics-intervention-expl/Les robots intelligents/Composants principaux d_un robot.jpg",
-        yt: "vp9CvU8cfH8",
+        vd: "/videos/Composants principaux d_un robot.mp4",
         show: false
       },
       {
         label: "L'intelligence des robots",
         icon: "/pics-intervention-expl/Les robots intelligents/L_intelligence des robots.jpg",
-        yt: "vp9CvU8cfH8",
+        vd: "/videos/Définition de la robotique.mp4",
         show: false
       }
      ]
    },
-   {
-    subTopic: "Les machines peuvent apprendre",
-    videos: [
-      {
-        label: "Méthodes d'apprentissage des machines",
-        icon: "/pics-intervention-expl/Les robots intelligents/Méthodes d_apprentissage des machines.jpg",
-        yt: "vp9CvU8cfH8",
-        show: true
-      },
-      {
-       label: "Définition d'un algorithme",
-       icon: "/pics-intervention-expl/Les robots intelligents/Définition d_un algorithme.jpg",
-       yt: "vp9CvU8cfH8",
-       show: false
-     },
-     {
-       label: "But de l'apprentissage des machines",
-       icon: "/pics-intervention-expl/Les robots intelligents/But de l_apprentissage des machines.jpg",
-       yt: "vp9CvU8cfH8",
-       show: false
-     }
-    ]
-  },
-  {
-    subTopic: "Les humains ont besoin des robots",
-    videos: [
-      {
-        label: "Les robots sont partout",
-        icon: "/pics-intervention-expl/Les robots intelligents/Les robots sont partout.jpg",
-        yt: "vp9CvU8cfH8",
-        show: true
-      },
-      {
-       label: "Exemple1: un robot pompier",
-       icon: "/pics-intervention-expl/Les robots intelligents/Robot pompier .jpg",
-       yt: "vp9CvU8cfH8",
-       show: false
-     },
-     {
-       label: "Exemple 2: un robot agriculteur",
-       icon: "/pics-intervention-expl/Les robots intelligents/robot agriculteur.jpg",
-       yt: "vp9CvU8cfH8",
-       show: false
-     }
-    ]
-  }
- ]
 }
