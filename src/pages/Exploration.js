@@ -68,7 +68,7 @@ export default function Exploration() {
     setShowChat(true)
     setTimeout(() => {
       setAskQuestion(true)
-    }, 5000)
+    }, 3000)
     setVideoAdded(false)
     setNoVideoAdded(false)
   }
@@ -137,7 +137,7 @@ export default function Exploration() {
                           st.videos.map(v => {
                             if (v.show) {
                               return <NavVideoWrapper onClick={() => handleNav(v)}>
-                                <img src="" />
+                                <img src={v.icon} />
                                 <h3>{v.label}</h3>
                               </NavVideoWrapper>
                             }
@@ -160,6 +160,12 @@ export default function Exploration() {
                       {
                         selectedVideo.yt &&
                         <iframe width="560" height="315" src={`https://www.youtube.com/embed/${selectedVideo.yt}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      }
+                      {
+                        selectedVideo.vd &&
+                        <video width="560" height="315" controls>
+                          <source src={selectedVideo.vd} type="video/mp4" />
+                        </video>
                       }
                     </VideoWrapper>
                     <ContentButtonWrapper>

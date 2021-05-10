@@ -18,3 +18,13 @@ export const ContentButtonWrapper = styled.div`
   display: flex;
   justify-content: space-around;
 `
+
+export const FigureWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+
+  img {
+    max-height: 300px;
+  }
+`

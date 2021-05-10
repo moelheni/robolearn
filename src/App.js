@@ -18,7 +18,6 @@ import Exploration from "./pages/Exploration";
 import PostExplorationIntroFinished from "./pages/PostExplorationIntroFinished";
 import Intro from "./pages/Intro";
 
-
 function App() {
   return (
     <div>

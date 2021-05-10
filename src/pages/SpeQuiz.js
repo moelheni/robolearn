@@ -1,19 +1,26 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Redirect, useParams } from "react-router";
 import TopicQuiz from "../components/TopicQuiz"
-
-import topics from '../data/topics'
+import { getSpeData } from "../data/spe-topics";
 
 export default function SpeQuiz() {
   let { id, exploration } = useParams();
-  console.log({exploration})
-  const topic = topics[id]
+  const [topic, setTopic] = useState(null)
+
+  useEffect(() => {
+    ;(async () => {
+      const topics = await getSpeData()
+      setTopic(topics[id])
+    })()
+  }, [])
 
   const [endQuiz, setEndQuiz] = useState(false)
 
   const onFinish = () => {
     setEndQuiz(true)
   }
+
+  if (!topic) return null
 
   return <>
     {

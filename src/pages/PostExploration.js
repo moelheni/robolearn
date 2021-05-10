@@ -17,7 +17,7 @@ export default function PreExplorationOutro() {
         big
         text="T'as presque fini! Avant de te dire au revoir, on va reprendre le quiz rapidement pour voir si on a appris de nouvelles choses. !" />
     <ContentButtonWrapper>
-      <Link to={`/spe-quiz/${id}`}>
+      <Link to={`/spe-quiz/${id}/finished`}>
         <Button variant="contained">Je commence</Button>
       </Link>
     </ContentButtonWrapper>

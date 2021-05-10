@@ -4,7 +4,7 @@ import Resize from "react-resize-layout/dist/Resize";
 import ResizeHorizon from "react-resize-layout/dist/ResizeHorizon";
 import { Redirect, useParams } from "react-router";
 import ChatMessage from "../components/ChatMessage";
-import ContentWrapper, { ContentButtonWrapper } from "../components/ContentWrapper";
+import ContentWrapper, { ContentButtonWrapper, FigureWrapper } from "../components/ContentWrapper";
 import { StoryWrapper } from "../components/StoryWrapper";
 import { ButtonsWrapper } from "../components/TopicQuiz.styled";
 import quPhase from "../data/quPhase";
@@ -70,6 +70,9 @@ export default function QaPhase() {
             <Typography variant="h5" className={classes.title}>
               Thème: {topicLabels[id]}
             </Typography>
+            <FigureWrapper>
+              <img src={topic.slides[slideIndex].image} />
+            </FigureWrapper>
             <StoryWrapper>
               {
                 topic.slides[slideIndex].text

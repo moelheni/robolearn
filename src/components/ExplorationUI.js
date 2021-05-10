@@ -24,22 +24,23 @@ export const NavVideosWrapper = styled.div`
 `
 
 export const NavVideoWrapper = styled.div`
-  width: 50%;
+  width: 32%;
   padding: 10px;
   text-align: center;
   cursor: pointer;
+  overflow: hidden;
+  padding: 5px;
   &:hover{
     background: #eee;
   }
 
   img {
-    max-width: 100px;
-    height: 100px;
-    background: red;
+    height: 80px;
   }
 
   h3 {
     font-weight: normal;
+    margin: 0;
   }
 `
 

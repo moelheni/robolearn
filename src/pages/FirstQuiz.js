@@ -1,15 +1,27 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Redirect, useParams } from "react-router";
 import TopicQuiz from "../components/TopicQuiz"
 
-import topics from '../data/topics'
+import { getGenData } from '../data/topics'
 import getRandom from "../utils/getRandom";
 
 export default function FirstQuiz() {
   let { id } = useParams();
-  const topic = topics[id]
+  const [topic, setTopic] = useState(null)
+  const [topics, setTopics] = useState(null)
   const [nextTopic, setNextTopic] = useState(null)
   const [endQuiz, setEndQuiz] = useState(false)
+
+  useEffect(() => {
+    ;(async () => {
+      if (topics) {
+        setTopic(topics[id])
+      } else {
+        const topics = await getGenData()
+        setTopics(topics)
+      }
+    })()
+  }, [id, topics])
 
   const onFinish = () => {
     const nextTopictoRedirect = Object.keys(topics).reduce((ac, e) => {
@@ -31,6 +43,9 @@ export default function FirstQuiz() {
     }
   }
 
+  if (!topic) return null
+  
+  console.log(topics)
 
   return <>
     {
