@@ -289,15 +289,551 @@ export default {
     ]
   },
   "monde-des-animaux": {
-    slides: []
+    slides: [
+      {
+      text: 'Est ce que les animaux parlent? Coa Coa Coa ... Rrraak Rraak .. Kyik Kyik Kyik Kyik ... En foret, particulièrement en foret tropicale, c est frappant: quelle que soit l heure de la journée, il y a toujours un habitant pour donner de la voix. Des grenouilles qui coassent, des singes qui piaillent... Les animaux s expriment, c est une évidence. Mais pour se dire quoi? A vrai dire, pas tant de choses que ça. Qu il s agisse de séduire un partenaire amoureux, de tenir à distance un rival ou encore de lancer une alerte en cas de danger, il faut bien reconnaitre que leurs conversations sont assez basiques. Rien à voir avec les possibilités infinies du language humain!',
+      image:'/pics-intervention-qa/Le monde des animaux/Les animaux parlent.jpg',
+      questions: [
+        {
+        starter: "Y a t-il",
+        options:[
+          "Les girafes",
+          "Communication visuelle",
+          "Demander de l'aide"
+        ]
+      },
+      {
+        starter: "Pourquoi",
+        options:[
+          "Les humains ont plus de besoins",
+          "Pour retrouver un ami",
+          "Pour les protéger",
+        ]
+      }
+      ]
   },
+  {
+    text: 'Le langage chez les Mones de Campbell? Le Mone de Campbell est un petit singe du Cote d Ivoire. En langage mone, les alertes hok et krak signifient aigle et léopard. Seulement, ajoutez un oo à la fin et cette fois, il faut comprendre danger dans les arbres (hok-oo), et danger au sol (krak-oo). Maintenant, combinez les krak-oo avec des boom, ça donne attention, chute de branches ou de troncs d arbre!  Aussi, autre que aigle et léopard, les mones poussent un autre son particulier quand quelqu un qu ils ne connaissent pas s approche de leur cage. C est un cri d alerte qui signale la présence d un humain!',
+        image:'/pics-intervention-qa/Le monde des animaux/mones de campbell.jpg',
+        questions: [
+          {
+          starter: "Comment",
+          options:[
+            "Des observations pendant 2 ans",
+            "25 cris successifs",
+            "Ils laissent des délais de réponses"
+          ]
+        },
+        {
+          starter: "Qui",
+          options:[
+            "Des chercheurs Ivoiriens",
+            "Seulement leurs semblables",
+            "Les singes males",
+          ]
+        }
+        ]
+    },
+  {
+  text: 'Le B.A.-BA du langage élèphant "Salut vous m avez manqué!" Chez les élèphants, la famille c est sacré! quand ils se retrouvent aprés une longue séparation, ils manifestent leur joie en émettant un grognement de bienvenue, tout en battant des oreilles et se caressant de la trompe. En meme temps, ils urinent, défèquent et tournent sur eux-meme. Quand une éléphante estime qu il est temps de bouger, elle se tourne dans la direction qu elle veut prendre, lève un pied à battre des oreilles et emet le grognement On y va!. La femelle répète génèralement ce signal plusieurs fois jusqu à convaincre sa tribu. Coa Coa ... Rrraak Rraak .. Kyik Kyik Kyik Kyik ... En foret, particulièrement en foret tropicale, c est frappant: quelle que soit l heure de la journée, il y a toujours un habitant pour donner de la voix. Des grenouilles qui coassent, des singes qui piaillent... Les animaux s expriment, c est une évidence. Mais pour se dire quoi? A vrai dire, pas tant de choses que ça. Qu il s agisse de séduire un partenaire amoureux, de tenir à distance un rival ou encore de lancer une alerte en cas de danger, il faut bien reconnaitre que leurs conversations sont assez basiques. Rien à voir avec les possibilités infinies du language humain!',
+      image:'/pics-intervention-qa/Le monde des animaux/elephants.jpg',
+      questions: [
+        {
+        starter: "Y a Pourquoi",
+        options:[
+          "Les Ils négocient avant",
+          "Ils sont très bas",
+          "Pour chercher l'eau"
+        ]
+      },
+      {
+        starter: "Comment",
+        options:[
+          "Par la trompe",
+          "Par le toucher",
+          "Ils peuvent les entendre depuis 5 kilomètres",
+        ]
+      }
+      ]
+  },
+  {
+    text: 'Comment communiquent les abeilles? Les abeilles exécutent une danse lorsqu elles veulent indiquer à leur collègues la position d une source de nectar. La rectruteuse exécute une chorégraphie en forme de huit sur les rayons verticaux de la ruche. Si l abeille parcourt l axe du huit de bas en haut, c est qu il faut partir face au soleil; si elle le fait dans le sens inverse, c est qu il faut partir dos au soleil. Les abeilles communiquent aussi par le biais de "vibrations": la vibration de toilettage, qu une abeille émet lorsqu elle a besoin qu une collègue la nettoie, ou encore la vibration du mendiant, utilisée pour demander à manger à une copine.',
+        image:'/pics-intervention-qa/Le monde des animaux/abeille.jpg',
+        questions: [
+          {
+          starter: "Comment",
+          options:[
+            "Elles échangesnt des produits chimiques",
+            "Elles utilisent leurs antennes",
+            "Enregistrements des chercheurs"
+          ]
+        },
+        {
+          starter: "Quel(le)",
+          options:[
+            "Motiver les fainéantes",
+            "L'odorat",
+            "Une danse en demi-cercle",
+          ]
+        }
+        ]
+    },
+    {
+      text: 'Une gonflée de grenouille? Une grenouille gonflée, va-t-elle s éclater? En réalité, elle interprète un chant d amour. Pour séduire les femelles, le male gonfle son sac vocal, une membrane de peau située sous sa gorge. Il pousse alors de longs et puissants cris, suivis de hurlements trés attirants pour les femelles... mais aussi pour les chauves-souris! Eh oui, meme si le chanteur se tait à la moindre ombre menaçante, les demoiselles ailées savent le repérer aux ondes qui se propagent autour de lui, à la surface d eau, plusieurs secondes aprés les coassements... et elles utilisent cet indice pour lui couper le sifflet définitivement.',
+          image:'/pics-intervention-qa/Le monde des animaux/grenouille.jpg',
+          questions: [
+            {
+            starter: "Quand",
+            options:[
+              "Le jour et la nuit",
+              "D'Avril jusqu'en Juin",
+              "Lorsqu'il fait chaud"
+            ]
+          },
+          {
+            starter: "Comment",
+            options:[
+              "Celui qui chante le plus fort",
+              "Ils ont un appareil amplificateur",
+              "Echo-localisation",
+            ]
+          }
+          ]
+      },
+      {
+        text: 'Peut-on parler aux animaux? Si l on veut causer gentiment à des animaux sauvages, il faut pouvoir s approcher d eux. Problème: ils ne s  attendent surement pas à recevoir un signal de communication de la part d un humain! Pour transmettre leurs messages, les chercheurs commencent donc à utiliser des animaux robots. Les premières expériences montrent qu il serait un jour possible de communiquer avec un très grand nombre d animaux. Pour le moment, on est loin de comprendre toute la subtilité de leurs messages. Autrement dit, meme quand on les imite, on n est pas encore absolument sur de ce qu on leur dit vraiment.',
+            image:'/pics-intervention-qa/Le monde des animaux/parler aux animaux.jpg',
+            questions: [
+              {
+              starter: "Pourquoi",
+              options:[
+                "Ne pas mettre les humains en danger",
+                "Cela fait peur aux animaux",
+                "Pour pouvoir les protéger"
+              ]
+            },
+            {
+              starter: "Que faut-il",
+              options:[
+                "Observer leur comportement",
+                "Pouvoir déchiffrer des sons",
+                "Pouvoir amplifier des sons",
+              ]
+            }
+            ]
+        }
+      ]
+    },
+
   "univers": {
-    slides: []
+    slides: [
+      {
+      text: "Quand observer le ciel? Première chose évidente pour faire de l'astronomie, il faut un ciel clair avec très peu de nuages. Si l'herbe est mouillée par exemple en fin de journée et qu'il fait assez froid, il risque d'y avoir de la brume et on ne peut pas voir les étoiles facilement. Pour le soleil c'est plus facile: l'idéal est de l'observer durant l'heure de midi car son image sera moins perturbée que le matin ou le soir. Pour observer la Lune, les planètes, les étoiles ou les galaxies il faut attendre la nuit. L'obseravtion peut se faire à l'oeil nu, mais pour agrandir l'image des objets, on peut utiliser une paire de jumelles, des lunettes astronomiques ou un téléscope.",
+            image:'/pics-intervention-qa/Univers/Observer le ciel.jpg',
+            questions: [
+              {
+              starter: "Pourquoi",
+              options:[
+                "Voir les détails de la Lune",
+                "Le soleil cache les étoiles",
+                "Voir plus d'étoiles"
+              ]
+            },
+            {
+              starter: "Comment",
+              options:[
+                "Utiliser une carte du ciel",
+                "Par une concentration d'étoiles",
+                "S'éloiger des éclairages",
+              ]
+            }
+            ]
+        },
+        {
+          text: "La Voie lactée est le nom de notre Galaxie dans laquelle se situe notre système solaire. Il s'agit d'une grande galaxie spirale barrée, abritant entre 200 et 400 milliards d'étoiles, dont le Soleil, et mesurant environ 100 000 années-lumière de diamètre. La nuit, loin des éclairages provenant des villes, on peut facilement la distinguer. Autour de la Voie lactée se trouve un petit nombre de petites galaxies en orbite autour de la nôtre, ce sont des galaxies naines, qui sont plus petites et possèdent généralement une forme irrégulière. Autour de la Voie lactée, l'espace est relativement vide avec seulement quelques galaxies qui forment ce que l'on appelle le Groupe local.",
+                image:'/pics-intervention-qa/Univers/voie lactée.jpg',
+                questions: [
+                  {
+                  starter: "Combien",
+                  options:[
+                    "100 milliards de planètes",
+                    "Une trentaine de galaxies",
+                    "2000 milliards de galaxies"
+                  ]
+                },
+                {
+                  starter: "A quoi",
+                  options:[
+                    "150 millions de kilomètres",
+                    "Ronde et aplatie",
+                    "Une bande blanchatre",
+                  ]
+                }
+                ]
+            },
+            {
+              text: "Le Big Bang Après plusieurs calculs, simulations sur ordinateurs et expériences faites dans des laboratoires de physique, on pense qu'au commencement des temps, l'univers avait une taille microscopique et contenait une quantité énorme d'énergie. Il n'existait donc pas de galaxies, ni d'étoiles, ni de planètes, rien. Au commencement donc, tout d'un coup, on pense qu'il y eut un sursaut d'énergie, comme une vague plus importante que les autres. Elle donna naissance à notre univers au cours d'un phénomène qui ressemble à une explosion et qu'on appelle le Big Bang. Cette énergie était tellement importante qu'elle créa toute la matière contenue dans l'univers.",
+                    image:'/pics-intervention-qa/Univers/big bang.jpg',
+                    questions: [
+                      {
+                      starter: "Quel",
+                      options:[
+                        "13.8 milliards d'années",
+                        "Le grand boum",
+                        "L'étoile"
+                      ]
+                    },
+                    {
+                      starter: "Pourquoi",
+                      options:[
+                        "Il était très chaud et dense",
+                        "Il a atteint 10 millions de degrès",
+                        "On se moquait de la thèorie",
+                      ]
+                    }
+                    ]
+                },
+                {
+                text: "Le Système solaire est le nom donné à notre système planétaire, composé du Soleil et de l'ensemble des objets célestes qui l'accompagnent et tournent autour de lui. Ceci inclut les planètes, leurs satellites, les astéroïdes, les comètes. L'âge du Système solaire est estimé à 4,5 milliards d'années, environ. Notre Système solaire compte huit planètes gravitant autour du Soleil : Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus et Neptune. Il est aussi composé de quatre planètes naines: Cérès, Pluton, Eris et Hauméa. Une planète est dite naine selon trois critères: son diamètre, sa forme et si elle est en orbite autour du soleil.",
+                image:'/pics-intervention-qa/Univers/système solaire.jpg',
+                questions: [
+                  {
+                  starter: "Quelle",
+                  options:[
+                    "Une étoile",
+                    "Forme sphérique",
+                    "Jupiter"
+                  ]
+                },
+                {
+                  starter: "Combien",
+                  options:[
+                    "1000 à 2500 kilomètres",
+                    "Un seul, la Lune",
+                    "Trois types",
+                  ]
+                }
+                ]
+            }, 
+            {
+              text: "Une constellation est un ensemble d'étoiles plus ou moins étendu qui représente une forme particulière à laquelle les Hommes ont donné un nom.  Ces formes se rapportent soit à des héros légendaires soit à des objets utilisés par l'homme. Dans l'hémisphère nord, la plus célèbre est la constellation de la Grande Ourse; elle est composée d'étoiles qui lui donnent la forme d'une casserole. Bien que les étoiles qui forment une constellation semblent être proches les unes des autres, ce n'est en général pas le cas. Les étoiles sont tellement éloignées de nous que l'on perd toute idée de perspective. Les constellations visibles changent en fonction de la période de l'année.",
+              image:'/pics-intervention-qa/Univers/constellations.jpg',
+              questions: [
+                {
+                starter: "Combien",
+                options:[
+                  "Quatre étoiles principales",
+                  "48 constellations",
+                  "7 étoiles"
+                ]
+              },
+              {
+                starter: "Quand",
+                options:[
+                  "Toute l'année",
+                  "La nuit",
+                  "Au moins 3 étoiles",
+                ]
+              }
+              ]
+          }, 
+          {
+            text: "L'astéroïde est un corps céleste composé de roches et de métaux. Il est de taille variée et se déplace dans l'espace et tourne autour du Soleil (ou d'une autre étoile), il ne fait partie ni des planètes, ni des lunes. Sa taille peut varier de moins d'un centimètre à plusieurs centaines de kilomètres de diamètre. Le premier astéroïde a été découvert en 1801, il s'agit de Cérès, désormais une planète naine. Son orbite autour du Soleil forme des ellipses. Il y a 65 millions d'années, c'est un astéroïde de 14 kilomètres de diamètre qui s'est écrasé sur Terre, au large du Mexique, il est en partie responsable de la disparition des dinosaures.",
+            image:'/pics-intervention-qa/Univers/asteroide.jpg',
+            questions: [
+              {
+              starter: "Comment",
+              options:[
+                "La taille d'une mimiplanète",
+                "La taille d'une patate",
+                "En utilisant des jumelles"
+              ]
+            },
+            {
+              starter: "Que",
+              options:[
+                "Surveillance permanente",
+                "Faire exploser tout un continent",
+                "Un Tsunami",
+              ]
+            }
+            ]
+        },
+          
+    ]
   },
   "proteger-nature": {
-    slides: []
+    slides: [
+      {
+        text: "Le développement durable est un ensemble d'idées, de moyens et de pratiques pour que la Terre et ses habitants ne souffrent pas trop de l'activité humaine dans le présent mais également dans le futur. Il vise à améliorer la qualité de vie. Son principe est de veiller à ce que le monde continue à se développer, mais sans porter atteinte à l'environnement. De ce fait, beaucoup de domaines sont concernés : économies d'énergie, pollution, gaspillage, déplacements, faune (les animaux), flore (les plantes)... Le développement durable est donc défini comme un développement qui répond aux besoins du présent sans poser de problèmes aux générations futures.",
+        image:'/pics-intervention-qa/Protéger la nature/Développement durable.jpg',
+        questions: [
+          {
+          starter: "Pourquoi",
+          options:[
+            "Nos ressources ne sont pas infinies",
+            "Son application coute cher",
+            "La notion est encore floue"
+          ]
+        },
+        {
+          starter: "Qui",
+          options:[
+            "Les pays",
+            "Les entreprises et les citoyens",
+            "Les défenseurs de l'environnement",
+          ]
+        }
+        ]
+    }, 
+    {
+      text: "Qu'est ce qu'une source d'énergie renouvelable? ce sont des sources d'énergies qui se renouvellent assez rapidement et qui proviennent de phénomènes naturels. Elles sont l'opposé des énergies fossiles (celles qui sont tirées principalement du charbon, du pétrole et du gaz naturel), qui pourraient disparaître si on les consomme en très grande quantité et rapidement. De manière générale, les énergies renouvelables sont plus propres que les énergies fossiles actuellement exploitées dans le monde entier. Elles sont plus écologiques, disponibles en masse autour du globe et sont « gratuites » une fois les installations de production rentabilisées. Elles sont aussi appelées les énergies vertes.",
+      image:'/pics-intervention-qa/Protéger la nature/Energies rebouvelables.jpg',
+      questions: [
+        {
+        starter: "Combien",
+        options:[
+          "60 ans, selon les scientifiques",
+          "Trois: soleil, eau et vent",
+          "5 grandes familles"
+        ]
+      },
+      {
+        starter: "Pourquoi",
+        options:[
+          "Ils produisent moins d'énèrgie",
+          "Leur installation est chère",
+          "Elles ne nuisent pas à la nature",
+        ]
+      }
+      ]
+  }, 
+
+  {
+    text: "La biomasse On appelle biomasse les matières issues des végétaux et des animaux. Le bois, lorsqu'il brûle, dégage de l'énergie sous forme de chaleur. Aussi, le biogaz permet de produire de la chaleur et de l'électricité. Ce gaz est fabriqué à partir de matières provenant des êtres vivants laissées évoluer dans un milieu sans oxygène. La source de biomasse la plus utilisée en tant qu'énergie est actuellement le bois de chauffage. La biomasse est considérée comme source d'énergie renouvelable lorsque sa regénération est égale à sa consommation: par exemple, l’utilisation du bois ne doit pas conduire à une diminution du nombre d’arbres.",
+    image:'/pics-intervention-qa/Protéger la nature/biomasse.jpg',
+    questions: [
+      {
+      starter: "Comment",
+      options:[
+        "La fermentation",
+        "La combustion",
+        "Déchets végétaux",
+      ]
+    },
+    {
+      starter: "Quel",
+      options:[
+        "La sur-exploitation de la ressource",
+        "Cela libère du CO2",
+        "La Suisse",
+      ]
+    }
+    ]
+}, 
+{
+  text: "La géothermie est l'utilisation de la chaleur du sol, la chaleur des roches plus ou moins profondes ou bien celle de l'eau qui circule dedans, pour en récupérer de l'énergie. Cela peut servir au chauffage des bâtiments, directement ou bien avec une pompe à chaleur. Lorsque la température des roches ou de l'eau est au dessus d'environ 150 °C, il est possible de produire de l'électricité à partir de cette ressource. La géothermie est considérée comme une source d’énergie renouvelable. Il y'a vingt-et-un pays du monde qui utilisent la géothermie pour produire de l’électricité dont les Etats-Unis, l'Ethiopie et le Portugal.",
+  image:'/pics-intervention-qa/Protéger la nature/geothermie.jpg',
+  questions: [
+    {
+    starter: "Quel(e)",
+    options:[
+      "10 à 14 degrès",
+      "4000 mètres",
+      "Elle ne dépend pas du climat",
+    ]
+  },
+  {
+    starter: "Comment",
+    options:[
+      "Avec des tuyaux",
+      "3.3 degrès chaque 100 mètres",
+      "On creuse des puits",
+    ]
+  }
+  ]
+}, 
+{
+  text: "L'eau est polluée à cause de l’activité humaine comme les bateaux ou les usines qui jettent leurs déchets et le non-traitement des égouts dans les pays pauvres, les causes sont extrêmement nombreuses. Elle est aussi polluée par les déchets sur la plage qui sont ramassés par la marée. Cette pollution peut avoir des conséquences graves sur la santé publique et sur la biodiversité. La pollution de l'eau affecte les fleuves, les lacs, et les océans. En Bretagne par exemple, certaines côtes ont été envahies par des algues et du plancton, celui-ci consomme le dioxygène dissout dans l'eau. L'eau devient alors trop pauvre en dioxygène et la faune et la flore ne peut plus y vivre.",
+  image:'/pics-intervention-qa/Protéger la nature/eau polluee.jpg',
+  questions: [
+    {
+    starter: "Quel(e)",
+    options:[
+      "Inde",
+      "Déchets chimiques des agriculteurs",
+      "Systèmes de filtrage d'eau",
+    ]
+  },
+  {
+    starter: "Pourquoi",
+    options:[
+      "Pas de lois qui interdisent les déchets",
+      "Cause des maladies si on la boit",
+      "Elle contient des bactèries",
+    ]
+  }
+  ]
+}, 
+{
+  text: "La pollution lumineuse, également appelée photopollution est la présence de lumière faite par des hommes dans l'environnement de nuit. Elle perturbe les écosystèmes et trouble la faune et la flore. On parle de pollution lumineuse lorsque les éclairages artificiels sont si nombreux qu'ils nuisent à l'obscurité normale et souhaitable de la nuit. Ainsi, à la tombée de la nuit, d'innombrables sources de lumières artificielles (lampes allumées sans cesse dans les rues,...) prennent le relais du soleil dans les centres urbains jusqu'au plus petit village. La pollution lumineuse a des effets sur la santé humaine et aussi un impact sur la faune comme la disparition de certains insectes. ",
+  image:'/pics-intervention-qa/Protéger la nature/photopollution.jpg',
+  questions: [
+    {
+    starter: "Pourquoi",
+    options:[
+      "ça masque des étoiles",
+      "Cela perturbe la chaine alimentaire",
+      "Décélère la croissance des plantes",
+    ]
+  },
+  {
+    starter: "Quel(e)",
+    options:[
+      "Désorientation des oiseaux migrateurs",
+      "Troubles de sommeil",
+      "Les Etats-Unis et la France",
+    ]
+  }
+  ]
+}, 
+    ]
   },
   "sports": {
-    slides: []
+    slides: [
+      {
+        text: "Porter de femme - Finlande, c’est une activité physique de course d’obstacles avec le poids de l’amour en plus ! Cette discipline sportive consiste à parcourir une course d’obstacles longue de 250 mètres tout en portant sa compagne. Celle-ci doit peser au minimum 49 kilos ou être lestée en conséquence pour s’ajuster. Pour gagner, l’homme doit porter sa femme sur le dos et terminer un parcours d’obstacles le plus rapidement possible sans laisser tomber sa compagne. C’est une belle allégorie de la vie commune pour certains et sans aucun intérêt pour d’autres. La compétition accueille chaque année quelques milliers de spectateurs.",
+        image:'/pics-intervention-qa/Sports/porter femme.jpg',
+        questions: [
+          {
+          starter: "Comment",
+          options:[
+            "Sur le dos",
+            "C'est une piste en sable'",
+            "Avec un casque",
+          ]
+        },
+        {
+          starter: "Quel(e)",
+          options:[
+            "Il y'a un obstacle sec",
+            "Le poids de la femme en bières",
+            "Il y'a un obstacle d'eau",
+          ]
+        }
+        ]
+      }, 
+      {
+        text: "Chess Boxing - Allemagne Le chess boxing est un mélange de boxe et de jeu d’échecs. C’est un sport qui requiert à la fois de l’intelligence et des muscles. Depuis 1992, ce sport s’est mondialisé et des pays tels que l’Angleterre, l’Allemagne, les Pays-Bas et la France. Les joueurs doivent être compétents à la fois en boxe et aux échecs. L’objectif de la boxe aux échecs est de battre son adversaire en alternant les parties d’échecs et de boxe. Les matchs peuvent être gagnés dans l’une ou l’autre des disciplines, les échecs se terminant par un échec et mat et la boxe par un arrêt ou un match nul.",
+        image:'/pics-intervention-qa/Sports/chessboxing.jpg',
+        questions: [
+          {
+          starter: "Comment",
+          options:[
+            "Il est inspiré d'un bande dessinée",
+            "Ils mettent un casque anti-bruits",
+            "K-O ou échec mat",
+          ]
+        },
+        {
+          starter: "Combien",
+          options:[
+            "Une minutes",
+            "11 au maximum",
+            "Quatre minutes",
+          ]
+        }
+        ]
+      },
+      {
+        text: "Le hockey sous-marin - Canada, est un sport où deux équipes s’affrontent dans l’espoir de pousser une palet de hockey fluorescent dans le but de leur adversaire. Avec le palet au centre de la piscine, une équipe de six joueurs plonge au fond de l’eau en attendant le signal de l’arbitre. Au son du signal, les joueurs sont autorisés à nager dans toutes les directions dans l’aire de jeu afin de déplacer la rondelle dans le but de leur adversaire. Pour jouer au hockey sous-marin, vous devez savoir nager, avoir des bâtons de hockey, faire du plongeon et porter un masque de plongée et un bonnet. Il y'a deux arbitres.",
+        image:'/pics-intervention-qa/Sports/hockey submarin.jpg',
+        questions: [
+          {
+          starter: "Pourquoi",
+          options:[
+            "Il faut un fond plat",
+            "Pour pouvoir le repèrer",
+            "Il faut un sous l'eau et un autre dehors",
+          ]
+        },
+        {
+          starter: "Comment",
+          options:[
+            "Noirs ou blancs",
+            "Avec une caméra aquatique",
+            "Par des gestes",
+          ]
+        }
+        ]
+      },
+    
+      {
+        text: "Le ninja volleyball - Thailande, c'est un jeu de volley-ball à pied où les joueurs touchent et manipulent le ballon en utilisant uniquement leurs pieds, leurs genoux, leur poitrine et leur tête. Très populaire dans toute l’Asie du Sud-Est, ce jeu se joue avec un ballon en rotin ou synthétique. Comme au volley-ball, ici aussi deux équipes de joueurs essaient de contrôler le ballon et tentent de le faire passer au filet pour le faire passer du côté adverse. Si le ballon ne passe pas le filet, l’équipe adverse marque un point et la première équipe qui marque le maximum de points est déclarée gagnante.",
+        image:'/pics-intervention-qa/Sports/sepak takraw.jpg',
+        questions: [
+          {
+          starter: "Comment",
+          options:[
+            "Sepak Takraw",
+            "Un sport national",
+            "Une manche est rajoutée",
+          ]
+        },
+        {
+          starter: "Combien",
+          options:[
+            "Deux manches",
+            "21 points",
+            "3 joueurs",
+          ]
+        }
+        ]
+      },
+      {
+        text: "Le cheese rolling - Royaume-Uni, Les participants descendent la colline en courant derrière un fromage (le Double Gloucester) ; la première personne à franchir la ligne d'arrivée remporte le fromage. En théorie, le gagnant est censé avoir attrapé le fromage, mais comme celui-ci est lancé avant les concurrents et peut atteindre une très grande vitesse donc voici pourquoi il changèrent un peu les règles du jeu pour remporter le fameux fromage. En 1997 un spectateur fut blessé par le fromage mais cela arrive rarement. Chaque année une compétition est organisée et des ambulances sont prévues en bas de la collines.",
+        image:'/pics-intervention-qa/Sports/cheese rolling.jpg',
+        questions: [
+          {
+          starter: "Quel(e)",
+          options:[
+            "4 kilogrammes",
+            "100 mètres",
+            "100 km par heure",
+          ]
+        },
+        {
+          starter: "Pourquoi",
+          options:[
+            "Les participants tombent dans la colline",
+            "L'attraper est presque impossible",
+            "Le terrain est en mauvais état",
+          ]
+        }
+        ]
+      },
+      {
+        text: "Le repassage extreme, ce sport est totalement énorme. Le concept: prendre une planche à repasser dans le lieu le plus dangereux du monde ou de votre quartier, puis de repasser quelques vêtements.  Le repassage extrême est un sport qui amène le multitâche à un tout autre niveau. Le repassage extrême combine l’acte de repasser et un sport dangereux comme le parachutisme ou la plongée profonde. Il y a eu plusieurs performances de repassage extrêmes dans des endroits incongrus : au sommet d’immenses statues, en canoë, sur de hautes montagnes et même dans les airs avec un parachute. Il y'a meme des compétitions officielles.",
+        image:'/pics-intervention-qa/Sports/extreme ironing.jpg',
+        questions: [
+          {
+          starter: "Combien",
+          options:[
+            "Un seul, en Allemagne",
+            "10 pays",
+            "1005 participants",
+          ]
+        },
+        {
+          starter: "Qui",
+          options:[
+            "Une marque de fers à repasser",
+            "Une équipe Sud-Africaine",
+            "Phil Shaw",
+          ]
+        }
+        ]
+      },
+    ]
   }
 }
