@@ -28,7 +28,7 @@ export const getVideos = async () => {
               {
                 label: e[2],
                 icon: `/pics-intervention-expl/${e[0]}/${e[2].replace(/'/g, '_')}.jpg`,
-                vd: `/videos/${e[2].replace(/'/g, '_')}.mp4`,
+                vd: `https://filedn.eu/lqx4QVrEq1Hjo1WnXF0tGH4/${e[2].replace(/'/g, '_')}.mp4`,
                 show: e[5].toLowerCase() === 'oui'
               }
             ]
@@ -43,7 +43,7 @@ export const getVideos = async () => {
               {
                 label: e[2],
                 icon: `/pics-intervention-expl/${e[0]}/${e[2].replace(/'/g, '_')}.jpg`,
-                vd: `/videos/${e[2].replace(/'/g, '_')}.mp4`,
+                vd: `https://filedn.eu/lqx4QVrEq1Hjo1WnXF0tGH4/${e[2].replace(/'/g, '_')}.mp4`,
                 show: e[5].toLowerCase() === 'oui'
               }
             ]
@@ -58,7 +58,7 @@ export const getVideos = async () => {
             {
               label: e[2],
               icon: `/pics-intervention-expl/${e[0]}/${e[2].replace(/'/g, '_')}.jpg`,
-              vd: `/videos/${e[2].replace(/'/g, '_')}.mp4`,
+              vd: `https://filedn.eu/lqx4QVrEq1Hjo1WnXF0tGH4/${e[2].replace(/'/g, '_')}.mp4`,
               show: e[5].toLowerCase() === 'oui'
             }
           ]
