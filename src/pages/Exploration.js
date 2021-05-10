@@ -136,7 +136,7 @@ export default function Exploration() {
     }
     <div style={{ position: "relative", height: 'calc(100vh)' }}>
 
-      <Resize handleWidth="5px" handleColor="#777">
+      <Resize handleWidth="5px" handleColor="#ddd">
         <ResizeVertical height="100px" minHeight="10px">
           <ProgressHeader>
             <h2>Tu peux encore ouvrir {countItems - doneItems} ressources cachées</h2>
@@ -146,7 +146,7 @@ export default function Exploration() {
           </ProgressHeader>
         </ResizeVertical>
         <ResizeVertical>
-          <Resize>
+          <Resize handleWidth="5px" handleColor="#ddd">
             <ResizeHorizon width="calc(100vw / 8 * 2)">
               <SubTopicNavWrapper>
                 <h1>Table de contenu</h1>

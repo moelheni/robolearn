@@ -64,7 +64,7 @@ export default function QaPhase() {
     }
 
     <div style={{ position: "relative", height: '100vh' }}>
-      <Resize handleWidth="5px" handleColor="#777">
+      <Resize handleWidth="5px" handleColor="#ddd">
         <ResizeHorizon width="calc(100vw / 3 * 2)">
           <ContentWrapper>
             <Typography variant="h5" className={classes.title}>

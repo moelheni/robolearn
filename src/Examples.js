@@ -42,7 +42,7 @@ function Examples() {
       <ChatMessage reversed text="What's a robot's component which function can be compared to a human's brain?" />
 
       <div style={{ position: "relative", height: '100vh' }}>
-        <Resize handleWidth="5px" handleColor="#777">
+        <Resize handleWidth="5px" handleColor="#ddd">
           <ResizeHorizon  width="calc(100vw/6)">
             <h1>blabla</h1>
           </ResizeHorizon  >
