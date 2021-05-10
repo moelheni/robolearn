@@ -12,7 +12,7 @@ export const getSpeData = async () => {
   const { data: csvData } = await Papa.parse(decodedData)
 
   return csvData.slice(1).reduce((ac, e) => {
-    const topicKey = topicKeys[e[0]]
+    const topicKey = topicKeys[e[0].trim()]
     if ( ac[topicKey] ) {
       return {
         ...ac,

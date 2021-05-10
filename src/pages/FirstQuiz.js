@@ -34,18 +34,16 @@ export default function FirstQuiz() {
       return ac
     }, null)
 
-    console.log({nextTopictoRedirect})
-
-    if (nextTopictoRedirect && nextTopic !== 'current') {
+    if (nextTopictoRedirect && nextTopictoRedirect !== 'current') {
       setNextTopic(nextTopictoRedirect)
-    } else if (nextTopic === 'current') {
+    } else if (nextTopictoRedirect === 'current') {
       setEndQuiz(true)
     }
   }
 
   if (!topic) return null
   
-  console.log(topics)
+  console.log({ endQuiz })
 
   return <>
     {
