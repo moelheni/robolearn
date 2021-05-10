@@ -747,7 +747,7 @@ export default {
       },
       {
         text: "Le hockey sous-marin - Canada, est un sport où deux équipes s’affrontent dans l’espoir de pousser une palet de hockey fluorescent dans le but de leur adversaire. Avec le palet au centre de la piscine, une équipe de six joueurs plonge au fond de l’eau en attendant le signal de l’arbitre. Au son du signal, les joueurs sont autorisés à nager dans toutes les directions dans l’aire de jeu afin de déplacer la rondelle dans le but de leur adversaire. Pour jouer au hockey sous-marin, vous devez savoir nager, avoir des bâtons de hockey, faire du plongeon et porter un masque de plongée et un bonnet. Il y'a deux arbitres.",
-        image:'/pics-intervention-qa/Sports/hockey submarin.jpg',
+        image:'/pics-intervention-qa/Sports/hockey submarin.png',
         questions: [
           {
           starter: "Pourquoi",
