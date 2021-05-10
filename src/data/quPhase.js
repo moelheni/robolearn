@@ -147,5 +147,157 @@ export default {
         ]
       }
     ]
+  },
+  "robotique-ia": {
+    slides: [
+      {
+        text: "Un robot est une machine qui interagit avec ce qui l'entoure. Comment y arrive-t-il? Grace à un programme informatique mis au point par un ingénieur, qui définit comment il doit réagir à ce qu'il détecte autour de lui. Un robot possède des capeturs pour percevoir des objets, des couleurs ou des sons, et des moteurs pour bouger. Le robot prend en compte ce qui se passe autour de lui, alors qu'un automate ne fait qu'éxécuter des mouvements définis à l'avance, sans pouvoir s'adapter aux évènements extérieurs. Il existe une multitude de robots diffèrents, avec des formes et des tailles très variées, adaptées à ce qu'on veut qu'ils fassent.",
+        image: "/pics-intervention-qa/Les robots intelligentns/Qu_est ce qu_un robot.jpg",
+        questions: [
+          {
+            starter: "Où",
+            options: [
+              "Dans sa mémoire",
+              "Des milieux dangereux",
+              "Toutes les industries",
+            ]
+          },
+          {
+            starter: "Qu'est ce qu'",
+            options: [
+              "Une caméra par exemple",
+              "Un actionneur",
+              "Un système qui reproduit une séquence d'actions",
+            ]
+          }
+        ]
+        
+      },
+      {
+        text: `Un robot possède une partie ordinateur qui lui sert de cerveau. On y trouve le processeur (qui fait les calculs) et la mémoire contenant un programme informatique. Ces élèments lui permettent de controler son comportement: ils calculent quelle action doit etre réalisée quand ses capteurs détectent des situations diverses. Sa partie ordinateur ne suffit pas de le rendre intelligent. Il lui faut aussi un corps adapté pour agir efficacement dans son environnement. Certains robots sont en plus capables de mémoriser, de résoudre des problèmes, d'apprendre ou de répondre lorsqu'on leur parle. Il y a donc dans les robots différentes formes d'intelligence artificielle.`,
+        image: "/pics-intervention-qa/Les robots intelligentns/robot cerveau.jpg",
+        questions: [
+          {
+            starter: "Quel",
+            options: [
+              "Enregistre les données importantes",
+              "Transmettent les données au processeur",
+              "Il effectue l'action",
+            ]
+          },
+          {
+            starter: "Comment",
+            options: [
+              "Via un programme informatique",
+              "Il cherche dans sa mémoire s'il a la réponse",
+              "On leur apprend les solutions à ces problèmes",
+            ]
+          }
+        ]
+        
+      },
+      {
+        text: `Un robot peut apprendre de plusieurs manières! Il peut apprendre par essai-erreur en testant plusieurs solutions possibles pour résoudre le problème et en gardant la meilleure. On parle alors d'apprentissage par renforcement. Il peut aussi apprendre par imitation, en mémorisant par exemple l'association entre un mot et une image. Il peut encore apprendre en écoutant les instructions qu'on lui donne en parlant et en les mémorisant. Quand il voit une nouvelle situation, il cherche dans sa mémoire s'il en a déjà vu une semblable. Si oui, il fait alors ce qui avait fonctionné avant.`,
+        image: "/pics-intervention-qa/Les robots intelligentns/un robot peut apprendre.jpg",
+        questions: [
+          {
+            starter: "Qu'est ce qui",
+            options: [
+              "Il fait une action au hasard",
+              "Faire beaucoup d'essais",
+              "Son programme informatique ",
+            ]
+          },
+          {
+            starter: "Combien",
+            options: [
+              "Des jours ",
+              "Beaucoup de données",
+              "5000 fois à peu prés",
+            ]
+          }
+        ]
+        
+      },
+      {
+        text: `Certains robots sont faits pour explorer leur environnement et expérimenter par eux-memes des choses, par exemple, trouver comment faire bouger des objets autour d'eux. Les ingénieurs qui les développent leur donnent une sorte de curiosité. Quand ils découvrent quelque chose de possible à faire, ils essaient plusieurs fois pour mieux y arriver. Ces robots peuvent meme réaliser que pour avoir une bonne connaissance des actions possibles avec ces objets, il leur manque des informations; et alors ils explorent encore davantage pour les obtenir.`,
+        image: "/pics-intervention-qa/Les robots intelligentns/robot curieux.jpg",
+        questions: [
+          {
+            starter: "Comment",
+            options: [
+              "Grace à sa mémoire",
+              "Son programme informatique",
+              "On lui dit s'il a tort",
+            ]
+          },
+          {
+            starter: "Pourquoi",
+            options: [
+              "Il est motivé par un but ",
+              "Il apprendra plus de choses",
+              "Il sera plus autonome",
+            ]
+          }
+        ]
+        
+      },
+      {
+        text: `Il est important de définir des règles pour éviter les mauvais usages des robots. Les ingénieurs sécurisent un robot en éliminant sa force ou en vérifiant la qualité de son programme informatique. Ils vérifient aussi le bon fonctionnement de ses composants électroniques. Pour éviter les mauvais surprises, ils mettent plusieurs systèmes de controle qui prennent le relais si certains viennent à mal fonctionner. Dans les avions les systèmes sont doublés, dans les fusées et les navettes spatiales, parfois triplés, et dans les centrales nucléaires quadriplés !`,
+        image: "/pics-intervention-qa/Les robots intelligentns/robot protection.jpg",
+        questions: [
+          {
+            starter: "Que",
+            options: [
+              "Des accidents mortels",
+              "Entrainer l'humain à bien l'utiliser",
+              "Des matériaux adaptés",
+            ]
+          },
+          {
+            starter: "Comment",
+            options: [
+              "Ajouter des boutons d'arret d'urgence",
+              "Respecter les normes de sécurité",
+              "Laisser des distances de sécurité",
+            ]
+          }
+        ]
+      },
+      {
+        text: `Il est difficile de prévoir comment vont évoluer les robots. Mais une chose est sure, ils deviendront ce que les hommes voudront qu'ils deviennent puisque ce sont eux qui les controlent. Ils seront de plus en plus nombreux, de plus en plus perfectionnés, sans doute présents dans tous les domaines, et les hommes travailleront avec eux. Des formes variées apparaitront: on verra des robots en un seul morceau ou des robots en plusieurs parties communiquant entre elles, des robots miniatures ou des robots énormes qui fabriqueront des maisons par exemple. Et il sera essentiel de bien les controler.`,
+        image: "/pics-intervention-qa/Les robots intelligentns/robot protection.jpg",
+        questions: [
+          {
+            starter: "Est-ce que",
+            options: [
+              "Les humains resteront indispensables ",
+              "30.000 fois plus puissants",
+              "Oui, et ils pourront meme nous vaincre",
+            ]
+          },
+          {
+            starter: "Pourquoi",
+            options: [
+              "Des programmes informatiques plus puissants",
+              "Ils facilitent la vie des humains",
+              "Ils peuvent détruire des choses, sinon",
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "monde-des-animaux": {
+    slides: []
+  },
+  "univers": {
+    slides: []
+  },
+  "proteger-nature": {
+    slides: []
+  },
+  "sports": {
+    slides: []
   }
 }
