@@ -82,7 +82,7 @@ export default function QaPhase() {
               !showQuestions &&
               <ContentButtonWrapper>
                 <Button onClick={finishedReading} variant="contained">J'ai fini de lire</Button>
-                <View style={{ flex: 1, backgroundColor: 'red' }}></View>
+                <View style={{ flex: 1 }}></View>
               </ContentButtonWrapper>
             }
           </ContentWrapper>
