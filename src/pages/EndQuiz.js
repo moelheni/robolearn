@@ -61,7 +61,7 @@ export default function EndQuiz() {
         <img src="/robot-danse-1-transparent.gif" />
       </GifWrapper>
 
-      <ChatMessage text="Bravo! Tu as fini cette première partie de quiz. Maintenant sélectionne les thèmes que tu veux avoir pendant nos prochaines activités:">
+      <ChatMessage text="Bravo! Tu as fini cette première partie de quiz. Maintenant sélectionne les deux thèmes que tu veux avoir pendant nos prochaines activités:">
         <Card variant="outlined">
           <CardContent>
             <FormControl component="fieldset" className={classes.formControl}>
