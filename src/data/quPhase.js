@@ -760,7 +760,7 @@ export default {
       },
     
       {
-        text: "Le ninja volleyball est un jeu de volley-ball à pied. Les joueurs touchent et manipulent le ballon en utilisant uniquement leurs pieds, leurs genoux, leur poitrine et leur tête. Très populaire dans toute l’Asie du Sud-Est où il a un autre nom, ce jeu se joue avec un ballon en rotin ou synthétique. Comme au volley-ball, deux équipes de joueurs essaient de faire passer le ballon au filet pour le faire passer du côté adverse. Si le ballon ne passe pas le filet, l’équipe adverse marque un point. La première équipe qui marque le maximum de points est déclarée gagnante du match."
+        text: "Le ninja volleyball est un jeu de volley-ball à pied. Les joueurs touchent et manipulent le ballon en utilisant uniquement leurs pieds, leurs genoux, leur poitrine et leur tête. Très populaire dans toute l’Asie du Sud-Est où il a un autre nom, ce jeu se joue avec un ballon en rotin ou synthétique. Comme au volley-ball, deux équipes de joueurs essaient de faire passer le ballon au filet pour le faire passer du côté adverse. Si le ballon ne passe pas le filet, l’équipe adverse marque un point. La première équipe qui marque le maximum de points est déclarée gagnante du match.",
         image:'/pics-intervention-qa/Sports/sepak takraw.jpg',
         questions: [
           {
