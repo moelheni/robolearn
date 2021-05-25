@@ -1,7 +1,7 @@
 import Papa from 'papaparse';
 
 export const topicLabels = {
-  "histoire-de-la-science": "Il était une fois la science",
+  "histoire-de-la-science": "Il était une fois les sciences",
   "robotique-ia": "Robots intelligents",
   "monde-des-animaux": "Le monde des animaux",
   "univers": "L'univers",
@@ -10,7 +10,7 @@ export const topicLabels = {
 }
 
 export const topicKeys = {
-  "Il était une fois la science": "histoire-de-la-science",
+  "Il était une fois les sciences": "histoire-de-la-science",
   "Robots intelligents": "robotique-ia",
   "Le monde des animaux": "monde-des-animaux",
   "L'univers": "univers",
