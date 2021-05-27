@@ -257,7 +257,7 @@ export default {
       },
       {
         text: "Il est difficile de prévoir comment vont évoluer les robots. Mais une chose est sure, ils deviendront ce que les hommes voudront qu'ils deviennent. Ils seront de plus en plus nombreux et de plus en plus perfectionnés. Ils seront sans doute présents dans différents domaines, et les hommes travailleront avec eux. Des formes variées apparaitront: on verra des robots en un seul morceau ou des robots en plusieurs parties qui communiquent entre elles. Des robots miniatures ou des robots énormes qui fabriqueront des maisons par exemple. Et il sera essentiel de bien les contrôler.",
-        image: "/pics-intervention-qa/Les robots intelligentns/robotevolution.jpg",
+        image: "/pics-intervention-qa/Les robots intelligentns/robot evolution.jpg",
         questions: [
           {
             starter: "Comment",
