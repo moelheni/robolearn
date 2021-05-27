@@ -377,7 +377,7 @@ export default {
             starter: "Comment",
             options:[
               "La femelle choisit le male qui chante le plus fort",
-              "Le grenouille se cache sous les feuilles du lac",
+              "La grenouille se cache sous les feuilles du lac",
               "La chauve-souris suit les sons de la grenouille"
             ]
           },
