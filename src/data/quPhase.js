@@ -406,7 +406,7 @@ export default {
             {
               starter: "Que",
               options:[
-                "Les robots imitent les comportement des animaux",
+                "Les robots imitent les comportements des animaux",
                 "Il faut faire beaucoup plus d'observations",
                 "On peut entendre sous l'eau par exemple",
               ]
