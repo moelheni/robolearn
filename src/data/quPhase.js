@@ -312,7 +312,7 @@ export default {
           options:[
             "On observe ces singes depuis 2 ans",
             "Ils reconnaissent les ennemis par l'odeur",
-            "Les isnges laissent des délais entre les sons"
+            "Les singes laissent des délais entre les sons"
           ]
         },
         {
