@@ -72,7 +72,7 @@ export default {
       },
       {
         text: "Alan Turing est un célèbre mathématicien qui est né en 1912 en Angleterre. Élève surdoué, son génie est vite repéré par ses proches et ses professeurs : il aurait appris à lire seul en trois semaines. Pendant la Seconde guerre mondiale, Turing a travaillé sur le déchiffrement des messages de l'armée allemande. Cela a permis aux Alliés de prendre de l'avance sur leurs adversaires. Turing est aussi un pionnier de l'informatique. Il a travaillé sur les premiers ordinateurs. Il a élaboré le test de Turing: une méthode qui permet de vérifier si un programme informatique est capable de parler avec des humains.",
-        image: "/pics-intervention-qa/Il était une fois la science/Alan Turing.jpg",
+        image: "/pics-intervention-qa/Il était une fois la science/AlanTuring.jpg",
         questions: [
           {
             starter: "Pourquoi",
