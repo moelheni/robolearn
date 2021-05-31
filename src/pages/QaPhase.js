@@ -147,9 +147,7 @@ export default function QaPhase() {
                 <ChatMessage text={
                   `Maintenant essaie de formuler ta question tout seul, comme on s'est entrainés ensemble.`
                 } />
-                 <ChatMessage text={
-                  `Attention, tu ne peux pas répéter une question précédente et la réponse ne doit pas figurer dans le texte.`
-                } />
+                 
                 <TextField id="standard-basic" label="Mets ta question ici" fullWidth onChange={handleChangeQuestion} />
 
                 <ContentButtonWrapper>
