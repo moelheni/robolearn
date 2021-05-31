@@ -29,11 +29,11 @@ export default {
         image: "/pics-intervention-qa/Il était une fois la science/AlbertEinstein.jpg",
         questions: [
           {
-            starter: "Qu'est ce que / C'est quoi",
+            starter: "Qu'est ce que/ Qu'est ce qu' / C'est quoi",
             options: [
-              "Une arme de guerre trè puissante",
+              "Une arme de guerre très puissante",
               "Des idées contre les guerres",
-              "Elle peuvent détruire un pays",
+              "On peut détruire un pays avec cette arme",
             ]
           },
           {
@@ -64,7 +64,7 @@ export default {
             options: [
               "Chauffer l'aliment puis le refroidir brusquemernt",
               "Une épidémie contagieuse",
-              "Une maladie qui causes des troubles de comportement",
+              "Une maladie qui cause des troubles de comportement",
             ]
           }
         ]
@@ -78,8 +78,8 @@ export default {
             starter: "Pourquoi",
             options: [
               "Ces messages contiennent des secrets de guerre",
-              "Pour connaitre leur stratégie de guerre",
-              "Pour tester s'il peut avoir une 'machine intelligente'",
+              "Pour connaitre la stratégie de guerre des ennemis",
+              "Pour tester s'il peut avoir une machine 'intelligente'",
             ]
           },
           {
@@ -130,7 +130,7 @@ export default {
           {
             starter: "Pourquoi",
             options: [
-              "Ils étaient mauvais termes avec Rosalind",
+              "Ils étaient en mauvais termes avec Rosalind",
               "Elle travaillait avec des rayons dangereux",
               "Les collègues de Rosalind ont nié sa participation",
             ]
@@ -142,7 +142,7 @@ export default {
   "robotique-ia": {
     slides: [
       {
-        text: "Les robots ont commencé à paraitre vers les années 1940. Il s’agit d’une machine qui peut interagir avec ce qui l'entoure. Un robot arrive à faire ça grâce à un programme informatique mis au point par un ingénieur. Ce programme définit comment le robot doit réagir à ce qu'il détecte autour de lui. Un robot est autonome et prend en compte ce qui se passe autour de lui. Il est différent d'un automate qui ne fait qu’exécuter des mouvements définis à l'avance, sans pouvoir s'adapter aux évènements extérieurs. Un robot possède deux grands types de composantes: des capteurs et des moteurs. Il existe une multitude de robots différents, avec des formes, des tailles et des poids très variés.",
+        text: "Les robots ont commencé à apparaitre vers les années 1940. Il s’agit d’une machine qui peut interagir avec ce qui l'entoure. Un robot arrive à faire ça grâce à un programme informatique mis au point par un ingénieur. Ce programme définit comment le robot doit réagir à ce qu'il détecte autour de lui. Un robot est autonome et prend en compte ce qui se passe autour de lui. Il est différent d'un automate qui ne fait qu’exécuter des mouvements définis à l'avance, sans pouvoir s'adapter aux évènements extérieurs. Un robot possède deux grands types de composantes: des capteurs et des moteurs. Il existe une multitude de robots différents, avec des formes, des tailles et des poids très variés.",
         image: "/pics-intervention-qa/Les robots intelligentns/Qu_est ce qu_un robot.jpg",
         questions: [
           {
@@ -150,7 +150,7 @@ export default {
             options: [
               "Pour aider l'homme pour les tâches difficiles",
               "Pour éviter les accidets par exemple",
-              "La forme du robot change selon sa fonction",
+              "La forme et la taille d'un robot doivent changer selon sa fonction",
             ]
           },
           {
@@ -172,7 +172,7 @@ export default {
             starter: "Quel",
             options: [
               "Il fait des calculs",
-              "Il enregistre les informations",
+              "Elle enregistre les informations",
               "Le moteur du robot",
             ]
           },
@@ -226,7 +226,7 @@ export default {
             starter: "Pourquoi",
             options: [
               "Pour qu'il trouve la meilleure solution",
-              "Pour qu'il apprenne plus de choses",
+              "Pour apprendre plus de choses",
               "Pour obtenir les informations manquantes",
             ]
           }
@@ -290,7 +290,7 @@ export default {
         options:[
           "Tous les animaux peuvent émettre des sons",
           "Ils communiquent aussi par des gestes",
-          "On les entends aussi dans les océans"
+          "On les entend aussi dans les océans"
         ]
       },
       {
@@ -310,8 +310,8 @@ export default {
           {
           starter: "Comment",
           options:[
-            "On observe ces singes depuis 2 ans",
-            "Ils reconnaissent les ennemis par l'odeur",
+            "On a observé ces singes pendant 2 ans",
+            "Les singes reconnaissent les ennemis par l'odeur",
             "Les singes laissent des délais entre les sons"
           ]
         },
@@ -330,7 +330,7 @@ export default {
       image:'/pics-intervention-qa/Le monde des animaux/elephants.jpg',
       questions: [
         {
-        starter: "Y a Pourquoi",
+        starter: "Pourquoi",
         options:[
           "Les femelles éléphantes sont les responsables",
           "Les grognements sont très bas",
@@ -364,7 +364,7 @@ export default {
           options:[
             "L'abeille utilise le nectar pour faire du miel",
             "Pour aider l'abeille à transporter le nectar",
-            "Pour motiver les fainéantes",
+            "Pour motiver les abeilles fainéantes",
           ]
         }
         ]
@@ -441,7 +441,7 @@ export default {
             ]
         },
         {
-          text: "La Voie lactée est le nom d’une Galaxie dans laquelle se situe notre système solaire. Il s'agit d'une grande galaxie, abritant entre 200 et 400 milliards d'étoiles, dont le Soleil. Elle mesure environ 100 000 années-lumière de diamètre. La nuit, loin des éclairages provenant des villes, on peut facilement la distinguer. Autour de la Voie lactée se trouve un petit nombre de petites galaxies, ce sont des galaxies naines. Elles sont plus petites et possèdent généralement une forme irrégulière. Avec la Voie lactée, ces galaxies forment ce que l'on appelle le 'Groupe local'.",
+          text: "La Voie lactée est le nom d’une Galaxie dans laquelle se situe notre système solaire. Il s'agit d'une grande galaxie, ayant entre 200 et 400 milliards d'étoiles, dont le Soleil. Elle mesure environ 100 000 années-lumière de diamètre. La nuit, loin des éclairages provenant des villes, on peut facilement la distinguer. Autour de la Voie lactée se trouve un petit nombre de petites galaxies, ce sont des galaxies naines. Elles sont plus petites et possèdent généralement une forme irrégulière. Avec la Voie lactée, ces galaxies forment ce que l'on appelle le 'Groupe local'.",
                 image:'/pics-intervention-qa/Univers/voie lactée.jpg',
                 questions: [
                   {
@@ -514,7 +514,7 @@ export default {
                 starter: "Combien",
                 options:[
                   "Au moins 3 étoiles",
-                  "8 constellations",
+                  "88 constellations",
                   "7 étoiles"
                 ]
               },
@@ -537,7 +537,7 @@ export default {
               options:[
                 "Il a toutes les caractéristiques d'une planète naine",
                 "Il n'a pas les mêmes caractéristiques",
-                "Le choc a détruit leurs habitats"
+                "Le choc a détruit les habitats des dinosaures"
               ]
             },
             {
@@ -545,7 +545,7 @@ export default {
               options:[
                 "Il traverse l'atmosphère",
                 "Par desobservations au hasard",
-                "Il faut les observer en permanence",
+                "Il faut observer les astéroides en permanence",
               ]
             }
             ]
@@ -585,7 +585,7 @@ export default {
         starter: "Combien / Dans combien",
         options:[
           "Dans prés de 60 ans, selon les chercheurs",
-          "Cinq: soleil, terre,eau, vent et végétaux",
+          "Cinq: soleil, terre, eau, vent et végétaux",
           "Quatre: pétrole, charbon, gaz et Ignite"
         ]
       },
@@ -602,7 +602,7 @@ export default {
 
   {
     text: "La géothermie est l'utilisation de la chaleur des roches profondes pour récupérer de l'énergie. Cela peut servir au chauffage des bâtiments directement. La température à la surface de la terre est basse mais augmente avec la profondeur. Lorsqu'elle atteint plus de 150 degrés, il est possible de produire de l'électricité à partir de cette ressource. La géothermie est considérée comme une source d’énergie renouvelable et a beaucoup d’avantages. Il y'a vingt-et-un pays du monde qui utilisent la géothermie pour produire de l’électricité.",
-    image:'/pics-intervention-qa/Protéger la nature/biomasse.jpg',
+    image:'/pics-intervention-qa/Protéger la nature/biomasse.png',
     questions: [
       {
       starter: "Quel/ Quelle / Quels",
@@ -615,7 +615,7 @@ export default {
     {
       starter: "Comment",
       options:[
-        "On vreuse à 4000 mètres de profondeur",
+        "On creuse à 4000 mètres de profondeur",
         "On utilise la chaleur de la profondeur de la terre",
         "On lie les bâtiments aux roches avec des tuyaux",
       ]
@@ -624,7 +624,7 @@ export default {
 }, 
 {
   text: "On appelle 'biomasse' les matières issues des végétaux et des animaux (comme le bois et les déchets d’animaux). On l'utilise de deux façons: combustion du bois et l’utilisation du biogaz. En effet, le bois, lorsqu'il brûle, dégage de l'énergie sous forme de chaleur. Aussi, le biogaz, une fois obtenu, permet de produire de la chaleur et de l'électricité. La source de biomasse la plus utilisée est actuellement le bois de chauffage. La biomasse n’est pas toujours considérée comme source d'énergie renouvelable. Par exemple, l’utilisation du bois ne doit pas conduire à une diminution du nombre d’arbres.",
-  image:'/pics-intervention-qa/Protéger la nature/geothermie.jpg',
+  image:'/pics-intervention-qa/Protéger la nature/geothermie.png',
   questions: [
     {
     starter: "C'est quoi/ Qu'est ce que",
@@ -709,7 +709,7 @@ export default {
           options:[
             "250 mètres",
             "Pour se protéger si elle tombe",
-            "Finlande",
+            "La Finlande",
           ]
         }
         ]
@@ -729,9 +729,9 @@ export default {
         {
           starter: "Combien",
           options:[
-            "Une minutes",
+            "Une minute",
             "11 tours au total",
-            "L'échec rapide dure 4 minutes",
+            "Un tour d'échec rapide dure 4 minutes",
           ]
         }
         ]
@@ -804,7 +804,7 @@ export default {
         ]
       },
       {
-        text: "Le sport du repassage extrême est totalement énorme. Le concept: aller repasser des vêtements dans le lieu le plus dangereux du monde. Le repassage extrême combine l’acte de repasser et un sport dangereux comme le parachutisme ou la plongée profonde. Il y a eu plusieurs performances de repassage extrêmes dans des endroits dangereux. Par exemple: au sommet d’immenses statues, en canoë, sur de hautes montagnes et même dans les airs avec un parachute. On a aussi organisé un tournoi mondial où plusieurs équipes de plusieurs pays ont  participé. L’équipe gagnante a réussi à repasser des vêtements sous l’eau.",
+        text: "Le sport du repassage extrême est totalement énorme. Le concept: aller repasser des vêtements dans le lieu le plus dangereux du monde. Le repassage extrême combine l’acte de repasser et un sport dangereux comme le parachutisme ou la plongée profonde. Il y a eu plusieurs performances de repassage extrêmes dans des endroits dangereux. Par exemple: au sommet d’immenses statues, en canoë, sur de hautes montagnes et même dans les airs avec un parachute. On a aussi organisé un tournoi mondial où plusieurs équipes de plusieurs pays ont  participé. L’équipe gagnante a réussi à repasser beaucoup de vêtements sous l’eau.",
         image:'/pics-intervention-qa/Sports/extreme ironing.jpg',
         questions: [
           {
