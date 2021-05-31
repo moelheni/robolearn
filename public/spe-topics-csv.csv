@@ -19,13 +19,13 @@ Robots intelligents,Divergente,Pourquoi les hommes sont-ils plus intelligents qu
 Robots intelligents,Controle,"Quel est le sport le plus ancien, le basketball ou le volleyball?",Ils sont nés la même année,Le volleyball,Le basketball
 Le monde des animaux,Divergente,"Parmi ces êtres vivants, lesquels sont des ennemis des pandas?",Les Chinois,Les léoprads,Les oiseaux
 Le monde des animaux,Controle,Laquelle de ces fonctions n'est pas une fonction prévue pour les robots?,Faire des tâches répétitives,Aller dans des environnements dangereux,Contrôler les actions des humains
-Le monde des animaux,Mémoire,Pourquoi les singes sont-ils entrain de disparaitre?,L'eau polluée les tue,L'homme est entrain de détruire leurs forêts,Il fait trop froid pour eux
+Le monde des animaux,Mémoire,Pourquoi les singes sont-ils en train de disparaitre?,L'eau polluée les tue,L'homme est en train de détruire leurs forêts,Il fait trop froid pour eux
 Le monde des animaux,Divergente,Pourquoi la France s'est-elle servie des chiens pendant la première guerre mondiale?,Ils font peur aux ennemis,Ils sont très rapides,Ils peuvent détecter la présence des ennemis par leur odorat
 Le monde des animaux,Controle,Qu'est ce qui fait le racourcissement/ rallongement des jours?,Le mouvement des astéroides,Le mouvement de la Terre,Le mouvement des comètes
 Le monde des animaux,Mémoire,Comment protège t-on les ours en France?,On chasse leurs ennemis,On les isole des autres animaux ,On les aide à se reproduire
 Le monde des animaux,Mémoire,Pourquoi les oiseaux sont-ils entrain de disparaitre en Europe?,Ils ne trouvent plus à manger,Il fait trop chaud pour eux,D'autres animaux les mangent
 Le monde des animaux,Controle,Quel type d'énergie utilise une éolienne?,L'énergie du bois,L'énergie du vent,L'énergie de l'eau
-Le monde des animaux,Divergente,"Si le corail disparait, que se passera t-il?",Plusieurs poissons n'auront plus d'habitat,Rien: les coraux ne servent à rien,On pourra pêcher plus de poissons
+Le monde des animaux,Divergente,Que se passerait-il si le corail disparait?,Plusieurs poissons n'auront plus d'habitat,"Rien, les coraux ne servent à rien",On pourra pêcher plus de poissons
 L'univers,Mémoire,Qu'est ce qui fait le racourcissement/ rallongement des jours?,Le mouvement des astéroides,Le mouvement de la Terre,Le mouvement des comètes
 L'univers,Controle,Quel type d'énergie utilise une éolienne?,L'énergie du bois,L'énergie du vent,L'énergie de l'eau
 L'univers,Mémoire,Pourquoi la vie est-elle difficile dans une navette spatiale?,Il n'y pas d'oxygène et on flottte,Il fait trop froid,Il n'y a pas de lumière
@@ -43,7 +43,7 @@ Protéger la nature,Divergente,Comment la direction d'un pays peut-elle encourag
 Protéger la nature,Divergente,Quel type d'énergie utilise une éolienne?,L'énergie du bois,L'énergie du vent,L'énergie de l'eau
 Protéger la nature,Mémoire,Pourquoi les pays se réunisset-ils pour lutter contre les problèmes du climat?,Pour animer une conférence,Pour entrer en compétition,C'est un problème qui concerne tous les pays
 Protéger la nature,Controle,"Quel le sport le plus ancien, le basketball ou le volleyball?",Ils sont nés la même année,Le volleyball,Le basketball
-Protéger la nature,Divergente,Est ce que les poissons vont disparaitre à cause de notre peche excessive?,Seulement certaines espèces,"Non, les poissons se reproduisent toujours","Oui, si on ne leur laisse pas le temps de se reproduire"
+Protéger la nature,Divergente,Est ce que les poissons vont disparaitre à cause de notre pêche excessive?,Seulement certaines espèces,"Non, les poissons se reproduisent toujours","Oui, si on ne leur laisse pas le temps de se reproduire"
 Sports ,Mémoire,Qui est le premier pays à avoir introduit le football?,L'Angleterre,L'Afrique du Sud,Le Japon
 Sports ,Controle,Où est née la radio?,En Asie,En Europe,En Afrique
 Sports ,Mémoire,Que voulait inventer le créateur du volleyball?,Un sport pour les jeunes seulement,Un sport simple pour tout le monde,Un sport extrême
