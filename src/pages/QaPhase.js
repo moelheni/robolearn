@@ -63,7 +63,7 @@ export default function QaPhase() {
       <Redirect to={`/pre-exploration-intro/${nextTopic}`} />
     }
 
-    <div style={{ position: "relative", height: '50vh' }}>
+    <div style={{ position: "relative", height: '100vh' }}>
       <Resize handleWidth="5px" handleColor="#ddd">
         <ResizeHorizon width="calc(100vw / 3 * 2)">
           <ContentWrapper>
