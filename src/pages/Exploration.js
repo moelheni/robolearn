@@ -205,7 +205,7 @@ export default function Exploration() {
                 showOptions &&
                 <AgentSpace>
                   <ChatMessage text={
-                    `Merci pour ta(es) question(s). Tu peux maintenant sélectionner la vidéo que veux que j'ouvre pour toi:`
+                    `Merci pour ta(es) question(s). Tu peux maintenant choisir la vidéo que tu veux que j'ouvre pour toi:`
                   } />
                   <EaseUp>
                     <Card>
