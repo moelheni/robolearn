@@ -2,6 +2,8 @@ import styled from "styled-components"
 
 export const SubTopicNavWrapper = styled.div`
   padding: 10px;
+  height: calc(100% - 20px);
+  overflow: auto;
   h1 {
     line-height: 1;
     margin: 4px 0;

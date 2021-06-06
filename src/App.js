@@ -17,57 +17,66 @@ import PreExplorationOutro from "./pages/PreExplorationOutro";
 import Exploration from "./pages/Exploration";
 import PostExplorationIntroFinished from "./pages/PostExplorationIntroFinished";
 import Intro from "./pages/Intro";
+import UserContext from "./context/UserContext";
+import { useState } from "react";
 
 function App() {
+  const [user, setUser] = useState(null)
   return (
     <div>
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Intro />
-          </Route>
-          <Route path="/first-quiz/:id">
-            <FirstQuiz />
-          </Route>
+      <UserContext.Provider value={{user, setUser}}>
+        <Router>
+          {
+            !user &&
+            <Redirect to="/" />
+          }
+          <Switch>
+            <Route exact path="/">
+              <Intro />
+            </Route>
+            <Route path="/first-quiz/:id">
+              <FirstQuiz />
+            </Route>
 
-          <Route exact path="/spe-quiz/:id">
-            <SpeQuiz />
-          </Route>
+            <Route exact path="/spe-quiz/:id">
+              <SpeQuiz />
+            </Route>
 
-          <Route path="/spe-quiz/:id/:exploration">
-            <SpeQuiz />
-          </Route>
+            <Route path="/spe-quiz/:id/:exploration">
+              <SpeQuiz />
+            </Route>
 
-          <Route path="/end-quiz">
-            <EndQuiz />
-          </Route>
+            <Route path="/end-quiz">
+              <EndQuiz />
+            </Route>
 
-          <Route path="/qa-phase/:id/:nextTopic">
-            <QaPhase />
-          </Route>
+            <Route path="/qa-phase/:id/:nextTopic">
+              <QaPhase />
+            </Route>
 
-          <Route path="/pre-exploration-intro/:id">
-            <PreExplorationIntro />
-          </Route>
+            <Route path="/pre-exploration-intro/:id">
+              <PreExplorationIntro />
+            </Route>
 
-          <Route path="/pre-exploration-outro/:id">
-            <PreExplorationOutro />
-          </Route>
+            <Route path="/pre-exploration-outro/:id">
+              <PreExplorationOutro />
+            </Route>
 
-          <Route path="/exploration/:id">
-            <Exploration />
-          </Route>
+            <Route path="/exploration/:id">
+              <Exploration />
+            </Route>
 
-          <Route path="/post-exploration/:id">
-            <PostExploration />
-          </Route>
+            <Route path="/post-exploration/:id">
+              <PostExploration />
+            </Route>
 
-          <Route path="/post-exploration-finished/:id">
-            <PostExplorationIntroFinished />
-          </Route>
-          
-        </Switch>
-      </Router>
+            <Route path="/post-exploration-finished/:id">
+              <PostExplorationIntroFinished />
+            </Route>
+            
+          </Switch>
+        </Router>
+      </UserContext.Provider>
     </div>
   );
 }

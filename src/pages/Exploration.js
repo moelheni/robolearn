@@ -1,5 +1,5 @@
 import { Card, CardContent, Checkbox, FormControlLabel, LinearProgress, TextField } from "@material-ui/core";
-import React, { useEffect, useRef, useState } from "react"
+import React, { useContext, useEffect, useRef, useState } from "react"
 import Resize from "react-resize-layout/dist/Resize";
 import ResizeHorizon from "react-resize-layout/dist/ResizeHorizon";
 import ResizeVertical from "react-resize-layout/dist/ResizeVertical";
@@ -12,13 +12,14 @@ import { getVideos } from "../data/explorations";
 import { topicLabels } from "../data/topics";
 import { Button } from "../components/Button"
 import { EaseUp } from "../components/EaseUp";
+import UserContext from "../context/UserContext";
+import { addUserInput } from "../services";
+import firebase from "firebase/app";
 
 export default function Exploration() {
   let { id } = useParams();
   const videoRef = useRef();
   const previousUrl = useRef('');
-
- 
 
   const [subTopics, setSubTopics] = useState(null)
 
@@ -34,6 +35,19 @@ export default function Exploration() {
   const [asqQuestion, setAskQuestion] = useState(false)
 
   const [redirectToPost, setRedirectToPost] = useState(false)
+
+  const [videoSeen, setVideoSeen] = useState([])
+
+  const [questionAsked, setQuestionAsked] = useState(false)
+
+  const { user } = useContext(UserContext)
+
+  const [startTime, setStartTime] = useState(null)
+
+  useEffect(() => {
+    setStartTime(Date.now())
+  }, [])
+
 
   useEffect(() => {
     ;(async () => {
@@ -78,30 +92,51 @@ export default function Exploration() {
 
   const progress = doneItems * 100 / countItems
 
-  const handleNav = (video) => {
+  const handleNav = async (video) => {
+    await addUserInput(user.identifiant, 'exploration', `${id}/viewed-videos/${video.label}_${Date.now()}`, {
+      video: video.label
+    })
+    if (videoSeen.filter(e => e.label === video.label).length === 0) {
+      setVideoSeen([
+        ...videoSeen,
+        video
+      ])
+    }
     setSelectedVideo(video)
   }
 
-  const enableOptions = () => {
-    setShowOptions(true)
-    setShowChat(false)
-    setAskQuestion(false)
+  const enableOptions = async () => {
+    await addUserInput(user.identifiant, 'exploration', `${id}/questions/${selectedVideo.label}`, {
+      video: selectedVideo.label,
+      question
+    })
+    if (countItems - doneItems === 0) {
+      
+      setShowChat(false)
+      setAskQuestion(false)
+      setShowOptions(false)
+      setQuestionAsked(true)
+      setSelectedVideo(null)
+    } else {
+      setShowOptions(true)
+      setShowChat(false)
+      setAskQuestion(false)
+      setQuestionAsked(false)
+    }
   }
   
 
-  const enableChat = () => {
-    if (countItems - doneItems === 0) {
-      setRedirectToPost(true)
-    }
+  const enableChat = async () => {
     setShowChat(true)
     setTimeout(() => {
       setAskQuestion(true)
     }, 3000)
     setVideoAdded(false)
     setNoVideoAdded(false)
+    setQuestionAsked(false)
   }
 
-  const addVideo = (subTopic, video) => {
+  const addVideo = async(subTopic, video) => {
     setCurrSubTopics({
       ...currSubTopics,
       [subTopic]: currSubTopics[subTopic].map(v => {
@@ -115,11 +150,13 @@ export default function Exploration() {
         }
       })
     })
+    
     setShowChat(false)
     setAskQuestion(false)
     setShowOptions(false)
     setVideoAdded(true)
     setSelectedVideo(null)
+    setQuestionAsked(false)
   }
 
   const handleNoQuestion = () => {
@@ -127,7 +164,18 @@ export default function Exploration() {
     setAskQuestion(false)
     setShowOptions(false)
     setNoVideoAdded(true)
+    setQuestionAsked(false)
   }
+
+  const endExploration = async () => {
+    await addUserInput(user.identifiant, 'exploration', `${id}/stats/duration`, {
+      seconds: (Date.now() - startTime) / 1000,
+      startTime: firebase.firestore.Timestamp.fromMillis(startTime),
+      endTime: firebase.firestore.Timestamp.now()
+    })
+    setRedirectToPost(true)
+  }
+
 
   return <div>
     {
@@ -139,10 +187,18 @@ export default function Exploration() {
       <Resize handleWidth="5px" handleColor="#ddd">
         <ResizeVertical height="100px" minHeight="10px">
           <ProgressHeader>
-            <h2>Tu peux encore ouvrir {countItems - doneItems} ressources cachées</h2>
-            <ProgressWrapper>
-              <LinearProgress height="10px" variant="determinate" value={progress} />
-            </ProgressWrapper>
+            <div>
+              <h2>Tu peux encore ouvrir {countItems - doneItems} ressources cachées</h2>
+              <ProgressWrapper>
+                <LinearProgress height="10px" variant="determinate" value={progress} />
+              </ProgressWrapper>
+            </div>
+            {
+              videoSeen.length >= 6 &&
+              <div>
+               <Button onClick={endExploration} variant="contained">Fin exploration</Button>
+              </div>
+            }
           </ProgressHeader>
         </ResizeVertical>
         <ResizeVertical>
@@ -248,43 +304,50 @@ export default function Exploration() {
                 showChat &&
                 <AgentSpace>
                   <ChatMessage text={
-                    `J'espère que tu as apprécié cette vidéo. Si tu le souhaites, tu peux demander une autre vidéo de la liste suivante que j'ai pour toi:`
+                    countItems - doneItems === 0
+                     ? `J'espère que tu as apprécié cette vidéo.`
+                     : `J'espère que tu as apprécié cette vidéo. Si tu le souhaites, tu peux demander une autre vidéo de la liste suivante que j'ai pour toi:`
                   } />
                   <EaseUp>
-                    <Card>
-                      <CardContent>
-                        <SubTopicList>
-                            {
-                              Object.keys(currSubTopics).map(key => {
-                                const st = currSubTopics[key]
-                                if (st.filter(v => !v.show).length) {
-                                  return <div>
-                                    <p>
-                                      Theme: {key}
-                                    </p>
-                                    <ul>
-                                      {
-                                        st.map(v => {
-                                          if (!v.show) {
-                                            return <li>{v.label}</li>
-                                          }
-                                        })
-                                      }
-                                    </ul>
-                                  </div>
-                                }
-                              })
-                            }
-                          </SubTopicList>
-                      </CardContent>
-                    </Card>
+                    {
+                      countItems - doneItems > 0 &&
+                      <Card>
+                        <CardContent>
+                          <SubTopicList>
+                              {
+                                Object.keys(currSubTopics).map(key => {
+                                  const st = currSubTopics[key]
+                                  if (st.filter(v => !v.show).length) {
+                                    return <div>
+                                      <p>
+                                        Theme: {key}
+                                      </p>
+                                      <ul>
+                                        {
+                                          st.map(v => {
+                                            if (!v.show) {
+                                              return <li>{v.label}</li>
+                                            }
+                                          })
+                                        }
+                                      </ul>
+                                    </div>
+                                  }
+                                })
+                              }
+                            </SubTopicList>
+                        </CardContent>
+                      </Card>
+                    }
                   </EaseUp>
 
                   {
                     asqQuestion &&
                     <>
                       <ChatMessage text={
-                        `Mais pour ça, tu dois tout d'abord me poser une question par rapport à la vidéo que tu viens de voir.`
+                        countItems - doneItems === 0
+                        ? `Poser une question par rapport à la vidéo que tu viens de voir`
+                        : `Mais pour ça, tu dois tout d'abord me poser une question par rapport à la vidéo que tu viens de voir.`
                       } />
 
                       <ChatMessage text={
@@ -308,6 +371,14 @@ export default function Exploration() {
                    <ChatMessage text={
                     `Super! J'ai ajouté la vidéo que tu as demandé dans ta table de contenu.`
                   } />
+                   <ChatMessage text={
+                    `Tu peux continuer ton exploration comme tu veux.`
+                  } />
+                </AgentSpace>
+              }
+              {
+                questionAsked &&
+                <AgentSpace>
                    <ChatMessage text={
                     `Tu peux continuer ton exploration comme tu veux.`
                   } />

@@ -1,19 +1,23 @@
 import { AppBar, Card, CardContent, Checkbox, FormControl, FormControlLabel, FormGroup, Slider, Toolbar, Typography } from "@material-ui/core";
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 import useStyles from "../useStyles";
 
 import ChatMessage from "../components/ChatMessage";
 import { Button, ChatButtons } from "../components/Button"
 import { ButtonsWrapper, ButtonWrapper, HeaderWrapper, NextBtnWrapper, QuizWrapper, SliderWrapper } from "./TopicQuiz.styled";
 import { EaseUp } from "./EaseUp";
+import UserContext from "../context/UserContext";
+import { addUserInput } from "../services";
 
-export default function TopicQuiz({ topic, goNextTopic, onFinish }) {
+export default function TopicQuiz({ topic, phase, onFinish }) {
   const [questionIndex, setQuestionIndex] = useState(0)
   const [optionEnabled, setOptionEnabled] = useState(false)
   const [ConfidenceEnabled, setConfidenceEnabled] = useState(false)
   const classes = useStyles()
+  const { user } = useContext(UserContext)
 
   const [state, setState] = React.useState({})
+  const [confidence, setConfidence] = useState(0)
 
   const handleChange = (event) => {
     setState({ [event.target.name]: event.target.checked });
@@ -23,7 +27,7 @@ export default function TopicQuiz({ topic, goNextTopic, onFinish }) {
     setOptionEnabled(true)
   }
 
-  const skipQuestion = () => {
+  const nextQuestion = () => {
     setOptionEnabled(false)
     setConfidenceEnabled(false)
     if (questionIndex + 1 < topic.length && questionIndex + 1 < topic.length) {
@@ -34,15 +38,34 @@ export default function TopicQuiz({ topic, goNextTopic, onFinish }) {
     }
   }
 
+  const skipQuestion = async (skipped) => {
+    await addUserInput(user.identifiant, phase, `${topic[questionIndex].topic}/questions/${topic[questionIndex].question.replace(/\//g, '-')}`, {
+      question: topic[questionIndex].question,
+      skipped,
+      didntAnswer: !skipped
+    })
+    nextQuestion()
+  }
+
   const showConfidence = () => {
     setConfidenceEnabled(true)
   }
 
-  const submitQuestion = () => {
+  function valuetext(value) {
+    return marks.filter(e => e.value === value).label
+  }
+
+  const submitQuestion = async () => {
     if (Object.keys(state).length) {
       // submit question to back
+      await addUserInput(user.identifiant, phase, `${topic[questionIndex].topic}/questions/${topic[questionIndex].question.replace(/\//g, '-')}` ,{
+        question: topic[questionIndex].question,
+        skipped: false,
+        answer: Object.keys(state)[0],
+        confidence: confidence
+      })
       setState({})
-      skipQuestion()
+      nextQuestion()
     }
   }
 
@@ -68,9 +91,7 @@ export default function TopicQuiz({ topic, goNextTopic, onFinish }) {
       label: 'Super confiant',
     },
   ];
-  function valuetext(value) {
-    return marks.filter(e => e.value === value).label
-  }
+  
 
   return <div>
     <AppBar position="fixed" color="default">
@@ -94,7 +115,7 @@ export default function TopicQuiz({ topic, goNextTopic, onFinish }) {
                 <Button variant="contained" onClick={showOptions} >Je veux essayer de répondre à cette question</Button>
               </ButtonWrapper>
               <ButtonWrapper>
-                <Button primary variant="contained" onClick={skipQuestion}>Je ne sais pas, je veux passer cette question</Button>
+                <Button primary variant="contained" onClick={() => skipQuestion(true)}>Je ne sais pas, je veux passer cette question</Button>
               </ButtonWrapper>
             </ButtonsWrapper>
           </ChatButtons>
@@ -133,7 +154,7 @@ export default function TopicQuiz({ topic, goNextTopic, onFinish }) {
               <Button variant="contained" onClick={showConfidence} disabled={Object.keys(state).length === 0}>Soumettre</Button>
             </ButtonWrapper>
             <ButtonWrapper>
-              <Button primary variant="contained" onClick={skipQuestion}>Je ne sais pas</Button>
+              <Button primary variant="contained" onClick={() => skipQuestion(false)}>Je ne sais pas</Button>
             </ButtonWrapper>
           </ButtonsWrapper>
         </ChatMessage>
@@ -153,6 +174,7 @@ export default function TopicQuiz({ topic, goNextTopic, onFinish }) {
                 marks={marks}
                 min={0}
                 max={100}
+                onChange={(e, v) => setConfidence(v)}
               />
             </SliderWrapper>
           </ChatMessage>

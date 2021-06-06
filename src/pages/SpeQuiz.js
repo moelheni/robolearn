@@ -31,6 +31,6 @@ export default function SpeQuiz() {
       endQuiz && exploration === 'finished' &&
       <Redirect to={`/post-exploration-finished/${id}`} />
     }
-    <TopicQuiz topic={topic} onFinish={onFinish} />
+    <TopicQuiz phase={exploration === 'finished' ? "post-exploration" : "pre-exploration"} topic={topic} onFinish={onFinish} />
   </>
 }

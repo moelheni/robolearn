@@ -2,6 +2,8 @@ import styled from "styled-components"
 
 export default styled.div`
   padding: 30px;
+  height: calc(100% - 20px);
+  overflow: auto;
 
   ${({ center }) => center && `
     padding: 0;

@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { Redirect, useParams } from "react-router";
 import TopicQuiz from "../components/TopicQuiz"
+import UserContext from "../context/UserContext";
 
 import { getGenData } from '../data/topics'
 import getRandom from "../utils/getRandom";
@@ -11,6 +12,7 @@ export default function FirstQuiz() {
   const [topics, setTopics] = useState(null)
   const [nextTopic, setNextTopic] = useState(null)
   const [endQuiz, setEndQuiz] = useState(false)
+  const { user } = useContext(UserContext)
 
   useEffect(() => {
     ;(async () => {
@@ -55,6 +57,6 @@ export default function FirstQuiz() {
       endQuiz &&
       <Redirect to="/end-quiz" />
     }
-    <TopicQuiz topic={topic} goNextTopic onFinish={onFinish} />
+    <TopicQuiz topic={topic} phase="first-questions" goNextTopic onFinish={onFinish} />
   </>
 }

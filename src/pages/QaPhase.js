@@ -1,5 +1,5 @@
 import { Card, CardContent, Checkbox, FormControl, FormControlLabel, FormGroup, TextField, Typography } from "@material-ui/core";
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 import Resize from "react-resize-layout/dist/Resize";
 import ResizeHorizon from "react-resize-layout/dist/ResizeHorizon";
 import { Redirect, useParams } from "react-router";
@@ -11,6 +11,8 @@ import quPhase from "../data/quPhase";
 import { topicLabels } from "../data/topics";
 import useStyles from "../useStyles";
 import { Button } from "../components/Button"
+import UserContext from "../context/UserContext";
+import { addUserInput } from "../services";
 
 export default function QaPhase() {
   let { id, nextTopic } = useParams();
@@ -28,6 +30,8 @@ export default function QaPhase() {
 
   const [state, setState] = React.useState({})
 
+  const { user } = useContext(UserContext)
+
   const handleChange = (event) => {
     setState({ [event.target.name]: event.target.checked });
   }
@@ -42,12 +46,16 @@ export default function QaPhase() {
     setQuestion(e.target.value)
   }
 
-  const nextQuestion = () => {
+  const nextQuestion = async () => {
+    await addUserInput(user.identifiant, 'qa-phase', `${id}/slides/${topic.slides[slideIndex].text.substring(0, 40).replace(/\//g, '-')}/questions/${questionIndex}`, {
+      text: topic.slides[slideIndex].text,
+      prompt: Object.keys(state).length ? Object.keys(state)[0]: "no-prompt"
+    })
     setState({})
     setQuestion('')
     if (questionIndex + 1 < 3) {
       setQuestionIndex(questionIndex + 1)
-    } else if (slideIndex + 1 < topic.slides.length) {
+    } else if (slideIndex + 1 < 3) {
       setShowQuestions(false)
       setQuestionIndex(0)
       setSlideIndex(slideIndex + 1)
@@ -75,7 +83,9 @@ export default function QaPhase() {
             </FigureWrapper>
             <StoryWrapper>
               {
-                topic.slides[slideIndex].text
+                topic.slides[slideIndex].text.split('\n').map(line => (
+                  <p>{line} <br /></p>
+                ))
               }
             </StoryWrapper>
             {

@@ -1,5 +1,5 @@
 import { AppBar, Card, CardContent, Checkbox, FormControl, FormControlLabel, FormGroup, Toolbar, Typography } from "@material-ui/core";
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 import { Redirect } from "react-router";
 import useStyles from "../useStyles";
 import { Button } from "../components/Button"
@@ -10,10 +10,17 @@ import { NextBtnWrapper, QuizWrapper } from "../components/TopicQuiz.styled";
 import getRandom from "../utils/getRandom";
 import { GifWrapper } from "../components/GifWrapper";
 import { ContentButtonWrapper } from "../components/ContentWrapper";
+import UserContext from "../context/UserContext";
+import { addUserInput } from "../services";
 
 export default function EndQuiz() {
 
   const classes = useStyles()
+
+  const { user } = useContext(UserContext)
+
+  const [selectedTopics, setSelectedTopic] = useState([])
+
 
   const [state, setState] = React.useState(Object.keys(topicLabels).reduce((ac, key) => {
     return {
@@ -34,13 +41,17 @@ export default function EndQuiz() {
     }
   }
 
-  const handleStart = () => {
+  const handleStart = async () => {
     if (Object.values(state).filter(e => !!e).length === 2) {
+      const randomSelectedTopics = getRandom(Object.keys(state).map(e => ({ label: e, value: state[e] })).filter(e => e.value), 2)
+      setSelectedTopic(randomSelectedTopics)
+      randomSelectedTopics.map(async e => {
+        await addUserInput(user.identifiant, "topic-picking",e.label , {})
+      })
       setStart(true)
     }
   }
 
-  const selectedTopics = getRandom(Object.keys(state).map(e => ({ label: e, value: state[e] })).filter(e => e.value), 2)
 
   return <div>
     <AppBar position="static" color="default">
