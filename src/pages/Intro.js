@@ -45,13 +45,15 @@ export default function PreExplorationOutro() {
         <Right>
           <h1>BIENVENUE SUR <br /> "CURIOUS KIDS"</h1>
 
-          <p>
-            dlqsùkdqsùkdùlqmqdlmùsskkllmmkkqqsslmlmddkkqqss
+          <p style={{ fontSize: "1.4em", maxWidth: '500px', margin: 'auto' }}>
+            JE M'APPELLE "CHATTY" ET AUJOURD'HUI ON VA FAIRE DES ACTIVITES ENSEMBLE <br /> <br />
+            TOUT D'ABORD, ON VA COMMENCER AVEC UN QUIZ GENERAL. <br /> <br />
+            QUAND TU ES PRET(E) CLIQUE SUR LE BUTTON "JE COMMENCE"
           </p>
 
           <ButtonWrapper>
             <Link to={`/first-quiz/histoire-de-la-science`}>
-              <Button variant="contained" onClick={handleIdentifiant} disabled={!identifiant}>Je commence</Button>
+              <Button variant="contained" onClick={handleIdentifiant} disabled={!identifiant}>JE COMMENCE</Button>
             </Link>
           </ButtonWrapper>
         </Right>

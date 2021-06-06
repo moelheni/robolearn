@@ -55,7 +55,7 @@ export default function QaPhase() {
     setQuestion('')
     if (questionIndex + 1 < 3) {
       setQuestionIndex(questionIndex + 1)
-    } else if (slideIndex + 1 < 3) {
+    } else if (slideIndex + 1 < topic.slides.length) {
       setShowQuestions(false)
       setQuestionIndex(0)
       setSlideIndex(slideIndex + 1)
@@ -156,6 +156,9 @@ export default function QaPhase() {
               <>
                 <ChatMessage text={
                   `Maintenant essaie de formuler ta question tout seul, comme on s'est entrainés ensemble.`
+                } />
+                <ChatMessage text={
+                  `Attention, tu ne peux pas répéter une question précédente et la réponse ne doit pas figurer dans le texte.`
                 } />
                  
                 <TextField id="standard-basic" label="Mets ta question ici" fullWidth onChange={handleChangeQuestion} />

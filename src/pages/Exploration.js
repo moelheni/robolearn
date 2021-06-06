@@ -52,10 +52,19 @@ export default function Exploration() {
   useEffect(() => {
     ;(async () => {
       const explorations = await getVideos()
+      console.log({ explorations })
       setSubTopics( explorations[id])
       setCurrSubTopics( explorations[id] )
     })()
   }, [id])
+
+  useEffect(() => {
+    ;(async () => {
+      await addUserInput(user.identifiant, 'exploration', `${id}/viewed-videos/${selectedVideo.label}_${Date.now()}`, {
+        video: selectedVideo.label
+      })
+    })()
+  }, [selectedVideo])
 
 
   useEffect(() => {
@@ -93,9 +102,6 @@ export default function Exploration() {
   const progress = doneItems * 100 / countItems
 
   const handleNav = async (video) => {
-    await addUserInput(user.identifiant, 'exploration', `${id}/viewed-videos/${video.label}_${Date.now()}`, {
-      video: video.label
-    })
     if (videoSeen.filter(e => e.label === video.label).length === 0) {
       setVideoSeen([
         ...videoSeen,
@@ -111,7 +117,6 @@ export default function Exploration() {
       question
     })
     if (countItems - doneItems === 0) {
-      
       setShowChat(false)
       setAskQuestion(false)
       setShowOptions(false)
@@ -173,6 +178,13 @@ export default function Exploration() {
       startTime: firebase.firestore.Timestamp.fromMillis(startTime),
       endTime: firebase.firestore.Timestamp.now()
     })
+
+    await addUserInput(user.identifiant, 'exploration', `${id}/stats/progress`, {
+      progress,
+      videoUnlocked: doneItems,
+      total: countItems
+    })
+
     setRedirectToPost(true)
   }
 
@@ -261,7 +273,7 @@ export default function Exploration() {
                 showOptions &&
                 <AgentSpace>
                   <ChatMessage text={
-                    `Merci pour ta(es) question(s). Tu peux maintenant sélectionner la vidéo que veux que j'ouvre pour toi:`
+                    `Merci pour ta(es) question(s). Tu peux maintenant choisir la vidéo que tu veux que j'ouvre pour toi:`
                   } />
                   <EaseUp>
                     <Card>
