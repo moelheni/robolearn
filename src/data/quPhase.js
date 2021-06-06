@@ -3,7 +3,7 @@ export default {
     slides: [
       {
         text: "Marie Curie est née en Pologne. Elle fait ses études à la faculté des sciences de Paris. Elle fait partie des rares femmes qui y sont admises. Avec son mari Pierre Curie, ils travaillent sur l’étude des rayons X et découvrent deux éléments physiques. Le couple reçoit le prix Nobel de physique pour ça. Pendant la Première guerre mondiale, elle met en place des ambulances équipées d’appareils de radiologie, ce qui permet de sauver de nombreux blessés. Marie Curie est la première femme à avoir reçu deux prix Nobel: un avec Pierre Curie en physique, et l’autre pour ses recherches en chimie. Elle est morte en 1906.",
-        image: "/pics-intervention-qa/Il était une fois la science/MarieCurie.jpg",
+        image: "/pics-intervention-qa/Il était une fois les sciences/MarieCurie.jpg",
         questions: [
           {
             starter: "C'est quoi / Qu'est ce que",
@@ -26,7 +26,7 @@ export default {
       },
       {
         text: "Albert Einstein est considéré comme l’un des plus grands scientifiques du 20éme siècle. Il est également connu pour ses idées pacifiques. Mauvais élève quand il était petit, Albert a réussi à se démarquer vite par ses recherches. Il obtient son diplôme d’une école à Zurich, en Suisse, et reçoit ensuite le prix Nobel de physique pour ses découvertes. Dans les années 1930, il y'a la seconde guerre mondiale en Allemagne. Einstein, d’origine juive, quitte donc l’Europe pour les États-Unis et y devient professeur. À son grand désespoir, ce pays se sert de ses recherches pour créer et utiliser la première bombe atomique.",
-        image: "/pics-intervention-qa/Il était une fois la science/AlbertEinstein.jpg",
+        image: "/pics-intervention-qa/Il était une fois les sciences/AlbertEinstein.jpg",
         questions: [
           {
             starter: "Qu'est ce que/ Qu'est ce qu' / C'est quoi",
@@ -49,7 +49,7 @@ export default {
       },
       {
         text: "Louis Pasteur naît en 1822. En 1865, il découvre une façon de conserver les aliments plus longtemps : on appelle cela la pasteurisation. Dans les années 1880, alors qu’il combattait le choléra chez les animaux, il lui vient une idée géniale : introduire en petite quantité la maladie pour que le corps renforce sa capacité à se défendre. C'est le principe de la vaccination! Il recommence l’expérience lorsqu’un petit garçon atteint de rage arrive dans son laboratoire. En 1888, Pasteur ouvre un institut dédié à la vaccination et à la recherche. Très vite, d’autres instituts ouvrent dans le monde entier.",
-        image: "/pics-intervention-qa/Il était une fois la science/LouisPasteur.jpg",
+        image: "/pics-intervention-qa/Il était une fois les sciences/LouisPasteur.jpg",
         questions: [
           {
             starter: "Comment",
@@ -72,7 +72,7 @@ export default {
       },
       {
         text: "Alan Turing est un célèbre mathématicien qui est né en 1912 en Angleterre. Élève surdoué, son génie est vite repéré par ses proches et ses professeurs : il aurait appris à lire seul en trois semaines. Pendant la Seconde guerre mondiale, Turing a travaillé sur le déchiffrement des messages de l'armée allemande. Cela a permis aux Alliés de prendre de l'avance sur leurs adversaires. Turing est aussi un pionnier de l'informatique. Il a travaillé sur les premiers ordinateurs. Il a élaboré le test de Turing: une méthode qui permet de vérifier si un programme informatique est capable de parler avec des humains.",
-        image: "/pics-intervention-qa/Il était une fois la science/AlanTuring.jpg",
+        image: "/pics-intervention-qa/Il était une fois les sciences/AlanTuring.jpg",
         questions: [
           {
             starter: "Pourquoi",
@@ -95,7 +95,7 @@ export default {
       },
       {
         text: "Gustave Eiffel, né en décembre 1832 à Dijon et mort en décembre 1923 à Paris, est un ingénieur français. Il suit les cours de l'École centrale des arts et manufactures où il obtient son diplôme d'ingénieur. Il travaille tout d'abord dans la construction des chemins de fer. A 26 ans, il dirige la construction du pont de Bordeaux. En 1864, il installe ses ateliers à Levallois-Perret prés de Paris. Il deviendra ensuite un pionnier de l'architecture métallique. Il a notamment construit : le viaduc Maria Pia au Portugal et la tour Eiffel à Paris. Il a aussi créé la structure métallique de la statue de la Liberté et l'a offerte aux Etats-Unis.",  
-        image: "/pics-intervention-qa/Il était une fois la science/GustaveEiffel.jpg",
+        image: "/pics-intervention-qa/Il était une fois les sciences/GustaveEiffel.jpg",
         questions: [
           {
             starter: "Pourquoi",
@@ -117,7 +117,7 @@ export default {
       },
       {
         text: "Rosalind Franklin est née en 1920, elle est pionnière de la biologie. Elle a découvert la structure de l'ADN. Rosalind Franklin intègre à 11 ans un des seuls établissements de Londres où la physique et la chimie sont enseignées aux jeunes filles. Dès 1956, la santé de Rosalind Franklin se dégrade suite à un cancer. Elle décède finalement, à seulement 38 ans. En 1962, ce sont ses collègues qui obtiennent le prix Nobel pour la découverte de la structure de l'ADN, ils ne citent pas Rosalind. Rosalind Franklin, malgré son rôle primordial, ne sera malheureusement pas récompensée à titre posthume.",
-        image: "/pics-intervention-qa/Il était une fois la science/RosalindFranklin.jpg",
+        image: "/pics-intervention-qa/Il était une fois les sciences/RosalindFranklin.jpg",
         questions: [
           {
             starter: "C'est quoi / Qu'est ce que",
