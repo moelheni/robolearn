@@ -164,7 +164,7 @@ export default function QaPhase() {
                 <TextField id="standard-basic" label="Mets ta question ici" fullWidth onChange={handleChangeQuestion} />
 
                 <ContentButtonWrapper>
-                  <Button onClick={nextQuestion} variant="contained" disabled={!question}>Soummetre</Button>
+                  <Button onClick={nextQuestion} variant="contained" disabled={!question}>Soumettre</Button>
                 </ContentButtonWrapper>
               </>
             }
