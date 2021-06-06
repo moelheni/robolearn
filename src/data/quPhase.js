@@ -660,7 +660,7 @@ export default {
     starter: "Pourquoi",
     options:[
       "L'eau polluée contient des bactéries",
-      "C'est le moyen le moins cher pour les bateaux'",
+      "C'est le moyen le moins cher pour les bateaux",
       "L'agriculture utilise des produits chimiques dangereux",
     ]
   }
