@@ -18,16 +18,32 @@ import Exploration from "./pages/Exploration";
 import PostExplorationIntroFinished from "./pages/PostExplorationIntroFinished";
 import Intro from "./pages/Intro";
 import UserContext from "./context/UserContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [user, setUser] = useState(null)
+  const [notLogin, setNotLogin] = useState(false)
+  useEffect(() => {
+    if (user) {
+      window.localStorage.setItem('user', JSON.stringify(user))
+    }
+  }, [user])
+
+  useEffect(() => {
+    const savedUser = window.localStorage.getItem('user')
+    console.log({ savedUser })
+    if (savedUser) {
+      setUser(JSON.parse(savedUser))
+    } else {
+      setNotLogin(true)
+    }
+  }, [])
   return (
     <div>
       <UserContext.Provider value={{user, setUser}}>
         <Router>
           {
-            !user &&
+            notLogin &&
             <Redirect to="/" />
           }
           <Switch>
