@@ -155,7 +155,7 @@ export default function QaPhase() {
               showQuestions && questionIndex  === 2 &&
               <>
                 <ChatMessage text={
-                  `Maintenant, pose-moi une question sur ce texte. Ta question peut commencer par '${topic.slides[slideIndex].questions[questionIndex].starter}'.`
+                  `Maintenant, pose-moi une question sur ce texte. Ta question peut commencer par '${topic.slides[slideIndex].questions[0].starter}'.`
                 } />
                 <ChatMessage text={
                   `Attention, la réponse à ta question ne doit pas figurer dans le texte.`
