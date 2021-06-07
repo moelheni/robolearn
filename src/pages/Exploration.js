@@ -58,12 +58,14 @@ export default function Exploration() {
   }, [id])
 
   useEffect(() => {
-    ;(async () => {
-      await addUserInput(user.identifiant, 'exploration', `${id}/viewed-videos/${selectedVideo.label}_${Date.now()}`, {
-        video: selectedVideo.label
-      })
-    })()
-  }, [selectedVideo])
+    if (selectedVideo && user) {
+      ;(async () => {
+        await addUserInput(user.identifiant, 'exploration', `${id}/viewed-videos/${selectedVideo.label}_${Date.now()}`, {
+          video: selectedVideo.label
+        })
+      })()
+    }
+  }, [selectedVideo, user])
 
 
   useEffect(() => {
