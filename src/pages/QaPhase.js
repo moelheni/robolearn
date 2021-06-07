@@ -49,7 +49,8 @@ export default function QaPhase() {
   const nextQuestion = async () => {
     await addUserInput(user.identifiant, 'qa-phase', `${id}/slides/${topic.slides[slideIndex].text.substring(0, 40).replace(/\//g, '-')}/questions/${questionIndex}`, {
       text: topic.slides[slideIndex].text,
-      prompt: Object.keys(state).length ? Object.keys(state)[0]: "no-prompt"
+      prompt: Object.keys(state).length ? Object.keys(state)[0]: "no-prompt",
+      question
     })
     setState({})
     setQuestion('')
