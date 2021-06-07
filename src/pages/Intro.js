@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { Link, Redirect } from "react-router-dom"
 import ChatMessage from "../components/ChatMessage"
 import { ContentButtonWrapper } from "../components/ContentWrapper"
@@ -19,12 +19,15 @@ export default function PreExplorationOutro() {
     setIdentifiant(e.target.value)
   }
 
+  useEffect(() => {
+    window.localStorage.removeItem('user')
+  }, [])
+
   const handleIdentifiant = async (e) => {
     e.preventDefault()
     const newUser = await addIdentifiant(identifiant)
     setUser(newUser)
   }
-  
 
   return (
     <>
