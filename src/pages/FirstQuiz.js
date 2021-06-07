@@ -45,8 +45,6 @@ export default function FirstQuiz() {
 
   if (!topic) return null
   
-  console.log({ endQuiz })
-
   return <>
     {
       nextTopic && nextTopic !== 'current' &&

@@ -31,7 +31,6 @@ function App() {
 
   useEffect(() => {
     const savedUser = window.localStorage.getItem('user')
-    console.log({ savedUser })
     if (savedUser) {
       setUser(JSON.parse(savedUser))
     } else {

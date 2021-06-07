@@ -52,7 +52,6 @@ export default function Exploration() {
   useEffect(() => {
     ;(async () => {
       const explorations = await getVideos()
-      console.log({ explorations })
       setSubTopics( explorations[id])
       setCurrSubTopics( explorations[id] )
     })()

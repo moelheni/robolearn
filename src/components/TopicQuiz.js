@@ -39,7 +39,6 @@ export default function TopicQuiz({ topic, phase, onFinish }) {
   }
 
   const skipQuestion = async (skipped) => {
-    console.log(topic, topic[questionIndex].question)
     await addUserInput(user.identifiant, phase, `${topic[questionIndex].topic}/questions/${topic[questionIndex].question.replace(/\//g, '-')}`, {
       question: topic[questionIndex].question,
       skipped,
