@@ -155,10 +155,10 @@ export default function QaPhase() {
               showQuestions && questionIndex  === 2 &&
               <>
                 <ChatMessage text={
-                  `Maintenant essaie de formuler ta question tout seul, comme on s'est entrainés ensemble.`
+                  `Maintenant, pose-moi une question sur ce texte. Ta question peut commencer par '${topic.slides[slideIndex].questions[questionIndex].starter}'.`
                 } />
                 <ChatMessage text={
-                  `Attention, tu ne peux pas répéter une question précédente et la réponse ne doit pas figurer dans le texte.`
+                  `Attention, la réponse à ta question ne doit pas figurer dans le texte.`
                 } />
                  
                 <TextField id="standard-basic" label="Mets ta question ici" fullWidth onChange={handleChangeQuestion} />
