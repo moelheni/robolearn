@@ -9,16 +9,16 @@ export default {
             starter: "C'est quoi / Qu'est ce que",
             options: [
               "Un prix scientifique très prestigieux",
-              "Un élèment pour voir l'intérieur de la matière",
-              "Un appareil qui prend des images de l'intérieur du corps",
+              //"Un élèment pour voir l'intérieur de la matière",
+              //"Un appareil qui prend des images de l'intérieur du corps",
             ]
           },
           {
             starter: "Pourquoi",
             options: [
               "Elle était atteinte d'un cancer",
-              "Il y'avait peu de femmes qui faisaient des sciences",
-              "Elle a découvert un élèment chimique",
+              //"Il y'avait peu de femmes qui faisaient des sciences",
+              //"Elle a découvert un élèment chimique",
             ]
           }
         ]
@@ -32,16 +32,16 @@ export default {
             starter: "Qu'est ce que/ Qu'est ce qu' / C'est quoi",
             options: [
               "Une arme de guerre très puissante",
-              "Des idées contre les guerres",
-              "On peut détruire un pays avec cette arme",
+              //"Des idées contre les guerres",
+              //"On peut détruire un pays avec cette arme",
             ]
           },
           {
             starter: "Comment",
             options: [
               "Il a expliqué la source de l'énergie",
-              "Il s'est enfui par train",
-              "Il appris les sciences tout seul",
+              //"Il s'est enfui par train",
+              //"Il appris les sciences tout seul",
             ]
           }
         ]
@@ -54,17 +54,17 @@ export default {
           {
             starter: "Comment",
             options: [
-              "On introduit la bactérie qui cause la maladie",
+              //"On introduit la bactérie qui cause la maladie",
               "Notre corps a des cellules pour le protéger",
-              "L'enfant était guéri",
+              //"L'enfant était guéri",
             ]
           },
           {
             starter: "C'est quoi / Qu'est ce que",
             options: [
-              "Chauffer l'aliment puis le refroidir brusquemernt",
+              //"Chauffer l'aliment puis le refroidir brusquemernt",
               "Une épidémie contagieuse",
-              "Une maladie qui cause des troubles de comportement",
+              //"Une maladie qui cause des troubles de comportement",
             ]
           }
         ]
@@ -77,17 +77,17 @@ export default {
           {
             starter: "Pourquoi",
             options: [
-              "Ces messages contiennent des secrets de guerre",
+              //"Ces messages contiennent des secrets de guerre",
               "Pour connaitre la stratégie de guerre des ennemis",
-              "Pour tester s'il peut avoir une machine 'intelligente'",
+              //"Pour tester s'il peut avoir une machine 'intelligente'",
             ]
           },
           {
             starter: "Qui",
             options: [
-              "L'Angleterre, la France et les Etats-Unis'",
-              "L'Allemagne, l'Italie et le Japon",
-              "Les alliés",
+              "Il s'agit de l'Angleterre, la France et les Etats-Unis'",
+              //"L'Allemagne, l'Italie et le Japon",
+              //"Les alliés",
             ]
           }
         ]
@@ -101,16 +101,16 @@ export default {
             starter: "Pourquoi",
             options: [
               "Pour connecter les deux rives d'un lac",
-              "Pour participer à une exposition internationale",
-              "C'est un signe d'amitié entre les deux pays",
+              //"Pour participer à une exposition internationale",
+              //"C'est un signe d'amitié entre les deux pays",
             ]
           },
           {
             starter: "Qu'est ce que/ ça veut dire quoi",
             options: [
               "Etre l'une des premières personnes à faire un métier",
-              "C'est l'art de la construction",
-              "C'est un pont très élevé",
+              //"C'est l'art de la construction",
+              //"C'est un pont très élevé",
             ]
           }
         ]
@@ -122,16 +122,16 @@ export default {
           {
             starter: "C'est quoi / Qu'est ce que",
             options: [
-              "Une particule qui stocke les caractères de l'humain",
-              "Etre honoré aprés le décés",
+              //"Une particule qui stocke les caractères de l'humain",
+              //"Etre honoré aprés le décés",
               "La science d'étudier l'être vivant",
             ]
           },
           {
             starter: "Pourquoi",
             options: [
-              "Ils étaient en mauvais termes avec Rosalind",
-              "Elle travaillait avec des rayons dangereux",
+              //"Ils étaient en mauvais termes avec Rosalind",
+              //"Elle travaillait avec des rayons dangereux",
               "Les collègues de Rosalind ont nié sa participation",
             ]
           }
@@ -149,16 +149,16 @@ export default {
             starter: "Pourquoi",
             options: [
               "Pour aider l'homme pour les tâches difficiles",
-              "Pour éviter les accidets par exemple",
-              "La forme et la taille d'un robot doivent changer selon sa fonction",
+              //"Pour éviter les accidets par exemple",
+              //"La forme et la taille d'un robot doivent changer selon sa fonction",
             ]
           },
           {
             starter: "C'est quoi",
             options: [
               "Un système pour percevoir des objets",
-              "Un système pour faire bouger le robot",
-              "Une suite d'ordres donnés au robot",
+              //"Un système pour faire bouger le robot",
+              //"Une suite d'ordres donnés au robot",
             ]
           }
         ]
@@ -171,16 +171,16 @@ export default {
           {
             starter: "Quel",
             options: [
-              "Il fait des calculs",
+              //"Il fait des calculs",
               "Elle enregistre les informations",
-              "Le moteur du robot",
+              //"Le moteur du robot",
             ]
           },
           {
             starter: "Comment",
             options: [
-              "Il enregistre l'information dans sa mémoire",
-              "Il a un haut-parleur",
+              //"Il enregistre l'information dans sa mémoire",
+              //"Il a un haut-parleur",
               "Son programme lui donne les solutions du problème",
             ]
           }
@@ -195,16 +195,16 @@ export default {
             starter: "Comment",
             options: [
               "Son programme lui dit s'il a la bonne solution",
-              "Il doit faire beaucoup d'essais",
-              "Il a un programme pour comprendre nos instructions",
+              //"Il doit faire beaucoup d'essais",
+              //"Il a un programme pour comprendre nos instructions",
             ]
           },
           {
             starter: "Que",
             options: [
               "Le robot fait une action au hasard",
-              "Le robot enregistre la solution dans sa mémoire",
-              "Le robot supprime la solution de sa mémoire",
+              //"Le robot enregistre la solution dans sa mémoire",
+              //"Le robot supprime la solution de sa mémoire",
             ]
           }
         ]
@@ -217,17 +217,17 @@ export default {
           {
             starter: "Comment",
             options: [
-              "Avec un programme qui fixe un but au robot",
+              //"Avec un programme qui fixe un but au robot",
               "Le robot commence par une action au hasard",
-              "Son programme lui dit s'il a la bonne solution",
+              //"Son programme lui dit s'il a la bonne solution",
             ]
           },
           {
             starter: "Pourquoi",
             options: [
-              "Pour qu'il trouve la meilleure solution",
+              //"Pour qu'il trouve la meilleure solution",
               "Pour apprendre plus de choses",
-              "Pour obtenir les informations manquantes",
+              //"Pour obtenir les informations manquantes",
             ]
           }
         ]
@@ -240,17 +240,17 @@ export default {
           {
             starter: "C'est quoi / Qu'est ce que",
             options: [
-              "Interdire le robot de bouger",
+              //"Interdire le robot de bouger",
               "Un centre où on produit de l'énergie",
-              "Une fusée qui va dans l'espace",
+              //"Une fusée qui va dans l'espace",
             ]
           },
           {
             starter: "Quelle / Quelles",
             options: [
               "Des fautes dans le programme informatique",
-              "Des accidents dangereux",
-              "Entrainer l'homme à bien contrôler son robot",
+              //"Des accidents dangereux",
+              //"Entrainer l'homme à bien contrôler son robot",
             ]
           }
         ]
@@ -263,15 +263,15 @@ export default {
             starter: "Comment",
             options: [
               "Ils seront plus précis dans les calculs",
-              "Par WiFi, par exemple",
-              "En contrôlant le programme informatique du robot",
+              //"Par WiFi, par exemple",
+              //"En contrôlant le programme informatique du robot",
             ]
           },
           {
             starter: "Pourquoi",
             options: [
-              "Ils peuvent faire des accidents, sinon",
-              "Parceque c'est l'homme qui les crée",
+              //"Ils peuvent faire des accidents, sinon",
+              //"Parceque c'est l'homme qui les crée",
               "Pour réduire la charge de travail des hommes",
             ]
           }
@@ -288,17 +288,17 @@ export default {
         {
         starter: "Est-ce qu'il y'a",
         options:[
-          "Tous les animaux peuvent émettre des sons",
+          //"Tous les animaux peuvent émettre des sons",
           "Ils communiquent aussi par des gestes",
-          "On les entend aussi dans les océans"
+          //"On les entend aussi dans les océans"
         ]
       },
       {
         starter: "Pourquoi",
         options:[
           "Pour demander de l'aide à un ami",
-          "Il y'a plus d'animaux dans les forêts",
-          "Les hommes sont beaucoup plus développés",
+          //"Il y'a plus d'animaux dans les forêts",
+          //"Les hommes sont beaucoup plus développés",
         ]
       }
       ]
@@ -310,16 +310,16 @@ export default {
           {
           starter: "Comment",
           options:[
-            "On a observé ces singes pendant 2 ans",
+            //"On a observé ces singes pendant 2 ans",
             "Les singes reconnaissent les ennemis par l'odeur",
-            "Les singes laissent des délais entre les sons"
+            //"Les singes laissent des délais entre les sons"
           ]
         },
         {
           starter: "Qui",
           options:[
-            "Des chercheurs Ivoiriens",
-            "Tous les singes de cette espèce",
+            //"Des chercheurs Ivoiriens",
+            //"Tous les singes de cette espèce",
             "Les aigles et les léopards",
           ]
         }
@@ -332,17 +332,17 @@ export default {
         {
         starter: "Pourquoi",
         options:[
-          "Les femelles éléphantes sont les responsables",
+          //"Les femelles éléphantes sont les responsables",
           "Les grognements sont très bas",
-          "Pour chercher de l'eau"
+          //"Pour chercher de l'eau"
         ]
       },
       {
         starter: "Comment",
         options:[
           "On utilise des appareils pour amplifier ces sons",
-          "L'éléphante répète son signal plusieurs fois",
-          "Les éléphants peuvent entendre à 5 kilomètres",
+          //"L'éléphante répète son signal plusieurs fois",
+          //"Les éléphants peuvent entendre à 5 kilomètres",
         ]
       }
       ]
@@ -355,15 +355,15 @@ export default {
           starter: "C'est quoi/ Qu'est ce que",
           options:[
             "Un liquide sucré produit par les fleurs",
-            "L'endroit où vivent les abeilles",
-            "La vibration pour demander à manger"
+            //"L'endroit où vivent les abeilles",
+            //"La vibration pour demander à manger"
           ]
         },
         {
           starter: "Pourquoi",
           options:[
-            "L'abeille utilise le nectar pour faire du miel",
-            "Pour aider l'abeille à transporter le nectar",
+            //"L'abeille utilise le nectar pour faire du miel",
+            //"Pour aider l'abeille à transporter le nectar",
             "Pour motiver les abeilles fainéantes",
           ]
         }
@@ -377,16 +377,16 @@ export default {
             starter: "Comment",
             options:[
               "La femelle choisit le male qui chante le plus fort",
-              "La grenouille se cache sous les feuilles du lac",
-              "La chauve-souris suit les sons de la grenouille"
+              //"La grenouille se cache sous les feuilles du lac",
+              //"La chauve-souris suit les sons de la grenouille"
             ]
           },
           {
             starter: "Pourquoi",
             options:[
-              "Les males ont un système amplificateur",
+              //"Les males ont un système amplificateur",
               "Les chauves-souris chassent les grenouilles",
-              "Pour attirer plus de femelles",
+              //"Pour attirer plus de femelles",
             ]
           }
           ]
@@ -399,16 +399,16 @@ export default {
               starter: "Pourquoi",
               options:[
                 "Les animaux ont peur des humains",
-                "Pour ne pas mettre les humains en danger",
-                "Pour pouvoir protéger les animaux"
+                //"Pour ne pas mettre les humains en danger",
+                //"Pour pouvoir protéger les animaux"
               ]
             },
             {
               starter: "Que",
               options:[
                 "Les robots imitent les comportements des animaux",
-                "Il faut faire beaucoup plus d'observations",
-                "On peut entendre sous l'eau par exemple",
+                //"Il faut faire beaucoup plus d'observations",
+                //"On peut entendre sous l'eau par exemple",
               ]
             }
             ]
@@ -425,16 +425,16 @@ export default {
               {
               starter: "C'est quoi/ Qu'est ce que / Qu'est ce qu'",
               options:[
-                "La science de l'étude de l'univers",
+                //"La science de l'étude de l'univers",
                 "Un corps qui émet de la lumière",
-                "Un ensemble d'étoiles"
+                //"Un ensemble d'étoiles"
               ]
             },
             {
               starter: "Comment",
               options:[
-                "On peut utiliser une carte du ciel",
-                "Par une lueur de lumière",
+                //"On peut utiliser une carte du ciel",
+                //"Par une lueur de lumière",
                 "En s'éloignant des éclairages",
               ]
             }
@@ -448,16 +448,16 @@ export default {
                   starter: "Combien",
                   options:[
                     "Il y'a 2000 milliards de galaxies",
-                    "Elle contient 100 millions d'étoiles",
-                    "Il est composé d'environ 60 galaxies"
+                    //"Elle contient 100 millions d'étoiles",
+                    //"Il est composé d'environ 60 galaxies"
                   ]
                 },
                 {
                   starter: "C'est quoi/ Qu'est ce que",
                   options:[
-                    "Un ensemble d'étoiles",
+                    //"Un ensemble d'étoiles",
                     "C'est l'équivalent de 150 millions de kilomètres",
-                    "C'est l'ensemble des planètes, la Lune et le Soleil",
+                    //"C'est l'ensemble des planètes, la Lune et le Soleil",
                   ]
                 }
                 ]
@@ -470,16 +470,16 @@ export default {
                       starter: "Quand",
                       options:[
                         "Il y'a 13.8 milliards d'années",
-                        "Dans les années 1920",
-                        "Quand l'univers a chauffé à 10 millions de degrés"
+                        //"Dans les années 1920",
+                        //"Quand l'univers a chauffé à 10 millions de degrés"
                       ]
                     },
                     {
                       starter: "Qu'est ce qu' / Qu'est ce que",
                       options:[
                         "L'augmentation de la taille de l'univers",
-                        "On ne sait pas ce qu'il y'avait avant",
-                        "C'est une taille extrêmement petite",
+                        //"On ne sait pas ce qu'il y'avait avant",
+                        //"C'est une taille extrêmement petite",
                       ]
                     }
                     ]
@@ -491,17 +491,17 @@ export default {
                   {
                   starter: "C'est quoi",
                   options:[
-                    "Un objet qui tourne autour d'une palnète",
+                    //"Un objet qui tourne autour d'une palnète",
                     "Un corps composé de roches et de métal",
-                    "Un corps qui ressemble aux astéroïdes"
+                    //"Un corps qui ressemble aux astéroïdes"
                   ]
                 },
                 {
                   starter: "Quel / Quelle",
                   options:[
                     "Un diamètre entre 1000 et 2500 kilomètres",
-                    "Une forme sphérique",
-                    "Elle tourne autour du soleil",
+                    //"Une forme sphérique",
+                    //"Elle tourne autour du soleil",
                   ]
                 }
                 ]
@@ -513,8 +513,8 @@ export default {
                 {
                 starter: "Combien",
                 options:[
-                  "Au moins 3 étoiles",
-                  "88 constellations",
+                  //"Au moins 3 étoiles",
+                  //"88 constellations",
                   "7 étoiles"
                 ]
               },
@@ -522,8 +522,8 @@ export default {
                 starter: "Quand",
                 options:[
                   "Durant toute l'année",
-                  "La nuit, si le ciel est clair",
-                  "En 1920",
+                  //"La nuit, si le ciel est clair",
+                  //"En 1920",
                 ]
               }
               ]
@@ -535,16 +535,16 @@ export default {
               {
               starter: "Pourquoi",
               options:[
-                "Il a toutes les caractéristiques d'une planète naine",
-                "Il n'a pas les mêmes caractéristiques",
+                //"Il a toutes les caractéristiques d'une planète naine",
+                //"Il n'a pas les mêmes caractéristiques",
                 "Le choc a détruit les habitats des dinosaures"
               ]
             },
             {
               starter: "Comment",
               options:[
-                "Il traverse l'atmosphère",
-                "Par desobservations au hasard",
+                //"Il traverse l'atmosphère",
+                //"Par desobservations au hasard",
                 "Il faut observer les astéroides en permanence",
               ]
             }
@@ -562,16 +562,16 @@ export default {
           {
           starter: "Comment",
           options:[
-            "En économisant l'eau, par exemple",
+            //"En économisant l'eau, par exemple",
             "Il ne faut pas utiliser toutes les ressources de la planète",
-            "En limitant l'utilisation du bois des forêts"
+            //"En limitant l'utilisation du bois des forêts"
           ]
         },
         {
-          starter: "Comment",
+          starter: "Qui",
           options:[
-            "Chaque pays décide de ses propres règles",
-            "Les entreprises et les citoyens",
+            //"Chaque pays décide de ses propres règles",
+            //"Les entreprises et les citoyens",
             "Les défenseurs de l'environnement",
           ]
         }
@@ -582,18 +582,18 @@ export default {
       image:'/pics-intervention-qa/Protéger la nature/Energies rebouvelables.jpg',
       questions: [
         {
-        starter: "Combien / Dans combien",
+        starter: "Combien",
         options:[
-          "Dans prés de 60 ans, selon les chercheurs",
+          //"Dans prés de 60 ans, selon les chercheurs",
           "Cinq: soleil, terre, eau, vent et végétaux",
-          "Quatre: pétrole, charbon, gaz et Ignite"
+          //"Quatre: pétrole, charbon, gaz et Ignite"
         ]
       },
       {
         starter: "Pourquoi",
         options:[
-          "Ces énergies produisent plus d'électricité",
-          "Le soleil, l'eau, le vent et la terre ne s'épuisent pas",
+          //"Ces énergies produisent plus d'électricité",
+          //"Le soleil, l'eau, le vent et la terre ne s'épuisent pas",
           "Les énergies fossiles dégagent des gazs dangereux",
         ]
       }
@@ -608,16 +608,16 @@ export default {
       starter: "Quel/ Quelle / Quels",
       options:[
         "Entre 10 et 14 degrés",
-        "Elle est présente partout et est facile à utiliser",
-        "Les Etats-Unis, par exemple",
+        //"Elle est présente partout et est facile à utiliser",
+        //"Les Etats-Unis, par exemple",
       ]
     },
     {
       starter: "Comment",
       options:[
         "On creuse à 4000 mètres de profondeur",
-        "On utilise la chaleur de la profondeur de la terre",
-        "On lie les bâtiments aux roches avec des tuyaux",
+        //"On utilise la chaleur de la profondeur de la terre",
+        //"On lie les bâtiments aux roches avec des tuyaux",
       ]
     }
     ]
@@ -629,16 +629,16 @@ export default {
     {
     starter: "C'est quoi/ Qu'est ce que",
     options:[
-      "C'est l'ensemble des plantes",
-      "C'est brûler complètement une matière",
+      //"C'est l'ensemble des plantes",
+      //"C'est brûler complètement une matière",
       "C'est un gaz issu des êtres vivants",
     ]
   },
   {
     starter: "Comment",
     options:[
-      "Le biogaz brûlé permet d'obtenir de la chaleur",
-      "En laissant les végétaux se décomposer",
+      //"Le biogaz brûlé permet d'obtenir de la chaleur",
+      //"En laissant les végétaux se décomposer",
       "Il faut planter autant d'arbres qu'on en utilise",
     ]
   }
@@ -652,16 +652,16 @@ export default {
     starter: "C'est quoi / Qu'est ce que",
     options:[
       "Avoir différents végétaux et animaux",
-      "Un organisme très petit qui vit dans la mer",
-      "Un gaz nécessaire pour la vie",
+      //"Un organisme très petit qui vit dans la mer",
+      //"Un gaz nécessaire pour la vie",
     ]
   },
   {
     starter: "Pourquoi",
     options:[
       "L'eau polluée contient des bactéries",
-      "C'est le moyen le moins cher pour les bateaux",
-      "L'agriculture utilise des produits chimiques dangereux",
+      //"C'est le moyen le moins cher pour les bateaux",
+      //"L'agriculture utilise des produits chimiques dangereux",
     ]
   }
   ]
@@ -673,17 +673,17 @@ export default {
     {
     starter: "Comment",
     options:[
-      "Elle diminue la croissance des plantes",
-      "Elle désoriente les oiseaux migrateurs",
+      //"Elle diminue la croissance des plantes",
+      //"Elle désoriente les oiseaux migrateurs",
       "Il faut mettre moins d'éclairage la nuit",
     ]
   },
   {
     starter: "Quel/ Quels",
     options:[
-      "Les feux d'artifice par exemple",
+      //"Les feux d'artifice par exemple",
       "Elle peut causer des troubles de sommeil",
-      "Les Etats-Unis et la France par exemple",
+      //"Les Etats-Unis et la France par exemple",
     ]
   }
   ]
@@ -699,17 +699,17 @@ export default {
           {
           starter: "Quel",
           options:[
-            "Le poids de la femme en boissons",
-            "La femme risque de tomber",
+            //"Le poids de la femme en boissons",
+            //"La femme risque de tomber",
             "49 kilogrammes",
           ]
         },
         {
           starter: "Quel/ Quelle/ De quel",
           options:[
-            "250 mètres",
-            "Pour se protéger si elle tombe",
-            "La Finlande",
+            "C'est une course de 250 mètres",
+            //"Pour se protéger si elle tombe",
+            //"La Finlande",
           ]
         }
         ]
@@ -721,16 +721,16 @@ export default {
           {
           starter: "Comment",
           options:[
-            "Il est inspiré d'un bande dessinée",
-            "On commence avec les éches",
+            //"Il est inspiré d'un bande dessinée",
+            //"On commence avec les éches",
             "On gagne avec un K-O ou un échec et mat",
           ]
         },
         {
           starter: "Combien",
           options:[
-            "Une minute",
-            "11 tours au total",
+            //"Une minute",
+            //"11 tours au total",
             "Un tour d'échec rapide dure 4 minutes",
           ]
         }
@@ -743,17 +743,17 @@ export default {
           {
           starter: "Pourquoi",
           options:[
-            "Pour pouvoir voir le palet sous l'eau",
+            //"Pour pouvoir voir le palet sous l'eau",
             "Il faut un arbitre sous l'eau et un dehors",
-            "Pour pouvoir respirer sous l'eau",
+            //"Pour pouvoir respirer sous l'eau",
           ]
         },
         {
           starter: "Comment",
           options:[
             "En maillots noirs ou blancs",
-            "On utilise des caméras aquatiques",
-            "Ils utilisent des gestes",
+            //"On utilise des caméras aquatiques",
+            //"Ils utilisent des gestes",
           ]
         }
         ]
@@ -767,15 +767,15 @@ export default {
           starter: "Comment",
           options:[
             "Si on touche le ballon avec la main",
-            "En combinant deux sports: le volley et le foot",
-            "Sepak Takraw",
+            //"En combinant deux sports: le volley et le foot",
+            //"Sepak Takraw",
           ]
         },
         {
           starter: "Combien",
           options:[
-            "Deux manches",
-            "21 points",
+            //"Deux manches",
+            //"21 points",
             "3 joueurs",
           ]
         }
@@ -789,16 +789,16 @@ export default {
           starter: "Quel / Quelle",
           options:[
             "4 kilogrammes",
-            "100 mètres",
-            "100 kilomètres par heure",
+            //"100 mètres",
+            //"100 kilomètres par heure",
           ]
         },
         {
           starter: "Pourquoi",
           options:[
             "Les participants tombent toujours dans la colline",
-            "Attraper le fromage est presque impossible",
-            "Le terrain est en mauvais état",
+            //"Attraper le fromage est presque impossible",
+            //"Le terrain est en mauvais état",
           ]
         }
         ]
@@ -810,16 +810,16 @@ export default {
           {
           starter: "Combien",
           options:[
-            "10 vêtements",
-            "10 pays",
+            //"10 vêtements",
+            //"10 pays",
             "1005 participants",
           ]
         },
         {
           starter: "Qui",
           options:[
-            "Une marque de fer à repasser",
-            "Une équipe Sud-Africaine",
+            //"Une marque de fer à repasser",
+            //"Une équipe Sud-Africaine",
             "Un homme appelé Phil Shaw",
           ]
         }
