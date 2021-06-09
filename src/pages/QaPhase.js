@@ -107,9 +107,11 @@ export default function QaPhase() {
               showQuestions && questionIndex < 2 &&
               <>
                 <ChatMessage text={
-                  `Voici trois réponses à trois questions possibles à propos de ce texte. Choisis-en une et essaie de trouver une question qui lui correspond.
-                  Ta question peut commencer par '${topic.slides[slideIndex].questions[questionIndex].starter}'`
+                  `Voici la réponse à ta question. Coche-la et essaie de trouver une question qui lui correspond.
+           
                 }>
+  
+                 <ChatMessage text={`Ta question peut commencer par '${topic.slides[slideIndex].questions[questionIndex].starter}'`}>
                   <Card variant="outlined">
                     <CardContent>
                       <FormControl component="fieldset" className={classes.formControl}>
