@@ -108,9 +108,7 @@ export default function QaPhase() {
               <>
                 <ChatMessage text={
                   `Voici la réponse à ta question. Coche-la et essaie de trouver une question qui lui correspond.
-           
                 }>
-  
                  <ChatMessage text={`Ta question peut commencer par '${topic.slides[slideIndex].questions[questionIndex].starter}'`}>
                   <Card variant="outlined">
                     <CardContent>
