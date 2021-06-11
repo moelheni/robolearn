@@ -54,7 +54,7 @@ export default function QaPhase() {
     })
     setState({})
     setQuestion('')
-    if (questionIndex + 1 < 3) {
+    if (questionIndex + 1 < 6) {
       setQuestionIndex(questionIndex + 1)
     } else if (slideIndex + 1 < topic.slides.length) {
       setShowQuestions(false)
@@ -104,7 +104,7 @@ export default function QaPhase() {
             </Typography>
 
             {
-              showQuestions && questionIndex < 2 &&
+              showQuestions && questionIndex < 5 &&
               <>
                 <ChatMessage text={
                   `Voici la réponse à ta question. Coche-la et essaie de trouver une question qui lui correspond. Ta question peut commencer par '${topic.slides[slideIndex].questions[questionIndex].starter}'`
@@ -153,7 +153,7 @@ export default function QaPhase() {
             }
 
             {
-              showQuestions && questionIndex  === 2 &&
+              showQuestions && questionIndex  === 5 &&
               <>
                 <ChatMessage text={
                   `Maintenant essaie de formuler ta question tout seul, comme on s'est entrainés ensemble.`
