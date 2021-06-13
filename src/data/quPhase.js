@@ -2,7 +2,7 @@ export default {
     "histoire-de-la-science": {
       slides: [
         {
-          text: "Louis Pasteur naît en 1822. En 1865, il découvre une façon de conserver les aliments plus longtemps : on appelle cela la pasteurisation. Dans les années 1880, alors qu’il combattait le choléra chez les animaux, il lui vient une idée géniale : introduire la maladie en petite quantité pour que le corps renforce sa capacité à se défendre. C'est le principe de la vaccination ! Il teste ce principe auprès d'un petit garçon atteint de rage. En 1888, Pasteur ouvre un institut dédié à la vaccination et à la recherche.",
+          text: "Louis Pasteur naît en 1822. En 1865, il découvre une façon de conserver les aliments plus longtemps : on appelle cela la pasteurisation. Dans les années 1880, alors qu’il combattait le choléra chez les animaux, il lui vint une idée géniale : introduire la maladie en petite quantité pour que le corps renforce sa capacité à se défendre. C'est le principe de la vaccination ! Il teste ce principe auprès d'un petit garçon atteint de rage. En 1888, Pasteur ouvre un institut dédié à la vaccination et à la recherche.",
           image: "/pics-intervention-qa/Il était une fois la science/LouisPasteur.jpg",
             audio: "/audios/Il était une fois la science/LouisPasteur.mp3",
           questions: [
@@ -71,7 +71,7 @@ export default {
             {
               starter: "Que veut dire",
               options: [
-                "Etre récompensé ou honoré aprés le décés",
+                "Etre récompensé ou honoré après le décés",
               ]
             },
           ]
@@ -138,7 +138,7 @@ export default {
             {
               starter: "Comment",
               options: [
-                "Son programme informatique lui donne la solution du problème",
+                "Son programme informatique lui donne la solution au problème",
               ]
             },
             {
@@ -406,7 +406,7 @@ export default {
                   {
                     starter: "Quand",
                     options:[
-                      "L'explosion s'est passée il y a 13,8 milliards d'années",
+                      "L'explosion a eu lieu il y a 13,8 milliards d'années",
                     ]
                   },
                   {
@@ -502,7 +502,7 @@ export default {
           ]
       }, 
       {
-        text: "L'eau est polluée à cause de l’activité humaine. Les causes de cette pollution sont très nombreuses. Par exemple: les bateaux qui jettent leurs déchets dans la mer. L’eau est aussi polluée par les déchets sur la plage qui sont emmenés par la marée. Cette pollution peut nuire à la santé et à la biodiversité. La pollution de l'eau affecte les fleuves, les lacs, et les océans. En Bretagne par exemple, certaines côtes ont été envahies par des algues et du plancton à cause de l’activité agricole. L'eau devient alors pauvre en dioxygène et la faune et la flore ne peut plus y vivre.",
+        text: "L'eau est polluée à cause de l’activité humaine. Les causes de cette pollution sont très nombreuses. Par exemple: les bateaux qui jettent leurs déchets dans la mer. L’eau est aussi polluée par les déchets sur la plage qui sont emmenés par la marée. Cette pollution peut nuire à la santé et à la biodiversité. La pollution de l'eau affecte les fleuves, les lacs, et les océans. En Bretagne par exemple, certaines côtes ont été envahies par des algues et du plancton à cause de l’activité agricole. L'eau devient alors pauvre en dioxygène et la faune et la flore ne peuvent plus y vivre.",
         image:'/pics-intervention-qa/Protéger la nature/eau polluee.jpg',
           audio: "/audios/Protéger la nature/eaupolluee.mp3",
         questions: [
