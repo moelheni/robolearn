@@ -4,6 +4,7 @@ export default {
         {
           text: "Louis Pasteur naît en 1822. En 1865, il découvre une façon de conserver les aliments plus longtemps : on appelle cela la pasteurisation. Dans les années 1880, alors qu’il combattait le choléra chez les animaux, il lui vient une idée géniale : introduire la maladie en petite quantité pour que le corps renforce sa capacité à se défendre. C'est le principe de la vaccination ! Il teste ce principe auprès d'un petit garçon atteint de rage. En 1888, Pasteur ouvre un institut dédié à la vaccination et à la recherche.",
           image: "/pics-intervention-qa/Il était une fois la science/LouisPasteur.jpg",
+            audio: "/audios/Il était une fois la science/LouisPasteur.mp3",
           questions: [
             {
               starter: "Comment",
@@ -41,6 +42,7 @@ export default {
         {
           text: "Rosalind Franklin est née en 1920, elle est pionnière de la biologie. A 11 ans, Rosalind intègre un des seuls établissements de Londres où la physique et la chimie sont enseignées aux jeunes filles. Au cours de ses recherches, elle découvre la structure de l'ADN. Malheureusement, la santé de Rosalind se dégrade suite à un cancer. Elle décède finalement, à seulement 38 ans. En 1962, ce sont ses collègues qui obtiennent le prix Nobel pour la découverte de la structure de l'ADN, sans parler de son travail. Rosalind Franklin, malgré son rôle primordial, ne sera pas récompensée à titre posthume.",
           image: "/pics-intervention-qa/Il était une fois la science/RosalindFranklin.jpg",
+            audio: "/audios/Il était une fois la science/RosalindFranklin.mp3",
           questions: [
             {
               starter: "Qu'est ce que",
@@ -78,6 +80,7 @@ export default {
         {
           text: "Alan Turing est un célèbre mathématicien anglais qui est né en 1912. Élève surdoué, son génie est vite repéré par ses proches et ses professeurs : il aurait appris à lire seul en trois semaines. Pendant la Seconde guerre mondiale, Turing a travaillé sur le déchiffrement des messages de l'armée allemande. Cela a permis aux Alliés de prendre de l'avance sur leurs adversaires. Turing est aussi un pionnier de l'informatique : il a travaillé sur les premiers ordinateurs.",
           image: "/pics-intervention-qa/Il était une fois la science/AlanTuring.jpg",
+            audio: "/audios/Il était une fois la science/AlanTuring.mp3",
           questions: [
             {
               starter: "Pourquoi",
@@ -118,6 +121,7 @@ export default {
         {
           text: "Un robot possède une partie ordinateur qui lui sert de cerveau. Ce 'cerveau' contient le processeur et la mémoire. Il peut contrôler le comportement du robot grâce à des capteurs : le 'cervreau' calcule comment le robot doit bouger en fonction de la situation. La partie ordinateur ne suffit pas à rendre le robot intelligent. Il lui faut aussi un corps adapté pour agir dans son environnement. Certains robots sont notamment capables de mémoriser, de résoudre des problèmes, d'apprendre ou de répondre lorsqu'on leur parle.",
           image: "/pics-intervention-qa/Les robots intelligentns/robot cerveau.jpg",
+            audio: "/audios/Les robots intelligents/robotcerveau.mp3",
           questions: [
             { 
               starter: "Quel",
@@ -154,6 +158,7 @@ export default {
         {
           text: "Il est important de définir des règles pour éviter les mauvais usages et les pannes robotiques. Les ingénieurs sécurisent un robot en faisant une « élimination de sa force » ou en vérifiant la qualité de son programme informatique. Ils vérifient aussi le bon fonctionnement de ses composantes électroniques. Pour éviter les mauvaises surprises, ils mettent plusieurs systèmes de contrôle qui viennent remplacer le robot en cas de problème. Dans les avions, il y a un double système de contrôle. Dans les fusées et les navettes, on trouve un triple système, et dans les centrales nucléaires, un quadruple système!",
           image: "/pics-intervention-qa/Les robots intelligentns/robot protection.jpg",
+            audio: "/audios/Les robots intelligents/robotprotection.mp3",
           questions: [
             {
               starter: "Que veut dire",
@@ -190,6 +195,7 @@ export default {
         {
           text: "Il est difficile de prévoir comment vont évoluer les robots. Mais une chose est sûre, ils deviendront ce que les hommes voudront qu'ils deviennent. Les robots seront de plus en plus nombreux et perfectionnés. Ils seront sûrement présents dans différents domaines, et les hommes travailleront avec eux. Il y aura des formes variées de robots : on verra des robots en un seul morceau ou en plusieurs parties qui communiquent entre elles, des robots miniatures ou des robots énormes qui fabriqueront des maisons par exemple. Il sera essentiel de bien contrôler tous ces robots.",
           image: "/pics-intervention-qa/Les robots intelligentns/robot evolution.jpg",
+          audio: "/audios/Les robots intelligents/robotevolution.mp3",
           questions: [
             {
               starter: "Qui",
@@ -230,6 +236,7 @@ export default {
         {
         text: "Les abeilles font une danse lorsqu'elles indiquent à leurs collègues la position d'une source de nectar. Elles font une danse en forme de huit sur les rayons de la ruche. Si l'abeille va de bas en haut, c'est qu'il faut partir face au soleil; si elle va dans le sens inverse, c'est qu'il faut partir dos au soleil. Les abeilles se parlent aussi avec des 'vibrations'. Il y a la vibration de 'toilettage' par exemple, lorsqu'une abeille a besoin qu'une collègue la nettoie, ou encore la vibration du 'mendiant'. Les abeilles font aussi une danse en demi-cercle.", 
         image:'/pics-intervention-qa/Le monde des animaux/Les abeille.jpg',
+        audio: "/audios/Le monde des animaux/abeille.mp3",
         questions: [
           {
           starter: "Qu'est ce que",
@@ -266,6 +273,7 @@ export default {
     {
       text: "Le Mone de Campbell est un petit singe de Côte d'Ivoire. En langage mone, les alertes (hok) et (krak) indiquent la présence de leurs deux ennemis. Lorsqu'on ajoute un 'oo' à la fin, il faut comprendre cette fois 'danger dans les arbres': (hok-oo), et 'danger au sol': (krak-oo). Maintenant, combinez les krak-oo avec des boom, ça donne 'attention, chute de branches ou de troncs d'arbre!': (krak-oo-boom). Ils peuvent donc construire des phrases! Aussi, les mones émettent un autre son particulier quand quelqu'un qu'ils ne connaissent pas s'approche d'eux. C'est un cri d'alerte qui signale la présence d'un humain!",
           image:'/pics-intervention-qa/Le monde des animaux/mones campbell.jpg',
+          audio: "/audios/Le monde des animaux/mones campbell.mp3",
           questions: [
             {
             starter: "Où",
@@ -301,7 +309,8 @@ export default {
       },
         {
           text:"Si l'on veut communiquer gentiment avec des animaux sauvages, il faut pouvoir s'approcher d'eux. Problème: cela est difficile. Pour transmettre leurs messages, les chercheurs commencent donc à utiliser des animaux robots. Un jour, il sera possible de communiquer avec un très grand nombre d'animaux. Mais pour le moment, on est loin de comprendre tous leurs messages. Même quand on les imite, on n'est pas encore sûrs de ce qu'on leur dit vraiment. Ils nous faut des appareils sophistiqués pour pouvoir comprendre leurs messages.",
-              image:'/pics-intervention-qa/Le monde des animaux/parler aux animaux.jpg',
+          image:'/pics-intervention-qa/Le monde des animaux/parler aux animaux.jpg',
+          audio: "/audios/Le monde des animaux/parler aux animaux.mp3",
               questions: [
                 {
                 starter: "Pourquoi",
@@ -343,6 +352,7 @@ export default {
         {
         text: "Une constellation est un ensemble d'étoiles qui représente une forme particulière. La plus célèbre est la constellation de la Grande Ourse; elle est composée d'étoiles très brillantes qui lui donnent la forme d'une casserole. La grande Ourse est très utile pour les marins. Bien que les étoiles formant une constellation semblent être proches les unes des autres, ce n'est en général pas le cas. Les étoiles sont tellement éloignées de nous que l'on perd toute idée de perspective. Il existe une carte du ciel qui indique toutes les constellations connues. ",
               image:'/pics-intervention-qa/Univers/constellations.jpg',
+            audio: "/audios/Univers/constellations.mp3",
               questions: [
                 {
                 starter: "Combien",
@@ -378,7 +388,8 @@ export default {
           },
           {
             text: "Après plusieurs expériences, on pense comprendre les premiers moments de notre univers: il avait une taille microscopique et était extrêmement chaud. Il n'existait donc pas de galaxies, ni d'étoiles, ni de planètes, rien. Au commencement, tout d'un coup, un phénomène qui ressemble à une explosion s'est produit et a donné naissance à l'univers. On appelle cela le Big Bang. Cette explosion de chaleur était tellement importante qu'elle créa toute la matière de l'univers. Les éléments se fusionnaient petit à petit pour en créer des nouveaux: on parle d'une 'expansion de l'univers'.",
-                  image:'/pics-intervention-qa/Univers/big bang.jpg',
+              image:'/pics-intervention-qa/Univers/big bang.jpg',
+              audio: "/audios/Univers/bigbang.mp3",
                   questions: [
                     {
                     starter: "Ça veut dire quoi",
@@ -414,7 +425,8 @@ export default {
               },
               {
                 text: "L'astéroïde est un corps composé de roches et de métaux. Il est de taille variée et se déplace dans l'espace. Il ne fait partie ni des planètes, ni des étoiles. Sa taille peut varier de moins d'un centimètre à plusieurs centaines de kilomètres de diamètre. Le premier astéroïde a été découvert en 1801. Il y a 65 millions d'années, c'est un astéroïde de 14 kilomètres de diamètre qui s'est écrasé sur Terre. Il est en partie responsable de la disparition des dinosaures. Les astéroides peuvent donc être dangereux et il faut éviter leurs chocs avec la terre.",
-                      image:'/pics-intervention-qa/Univers/asteroide.jpg',
+                  image:'/pics-intervention-qa/Univers/asteroide.jpg',
+                  audio: "/audios/Univers/asteroide.mp3",
                       questions: [
                         {
                         starter: "Comment",
@@ -455,6 +467,7 @@ export default {
         {
           text: "La géothermie est l'utilisation de la chaleur des roches profondes pour récupérer de l'énergie. La température à la surface de la terre est basse mais augmente avec la profondeur. Lorsqu'elle atteint plus de 150 degrés, il est possible de produire de l'électricité à partir de cette chaleur. La géothermie est considérée comme une source d’énergie renouvelable et a beaucoup d’avantages. Mais y a seulement vingt-et-un pays du monde qui utilisent la géothermie pour produire de l’électricité. ",
           image:'/pics-intervention-qa/Protéger la nature/geothermie.png',
+            audio: "/audios/Protéger la nature/geothermie.mp3",
           questions: [
             {
             starter: "Comment",
@@ -491,6 +504,7 @@ export default {
       {
         text: "L'eau est polluée à cause de l’activité humaine. Les causes de cette pollution sont très nombreuses. Par exemple: les bateaux qui jettent leurs déchets dans la mer. L’eau est aussi polluée par les déchets sur la plage qui sont emmenés par la marée. Cette pollution peut nuire à la santé et à la biodiversité. La pollution de l'eau affecte les fleuves, les lacs, et les océans. En Bretagne par exemple, certaines côtes ont été envahies par des algues et du plancton à cause de l’activité agricole. L'eau devient alors pauvre en dioxygène et la faune et la flore ne peut plus y vivre.",
         image:'/pics-intervention-qa/Protéger la nature/eau polluee.jpg',
+          audio: "/audios/Protéger la nature/eaupolluee.mp3",
         questions: [
           {
           starter: "C'est quoi'",
@@ -528,6 +542,7 @@ export default {
     {
       text: "La pollution lumineuse, également appelée photo-pollution est la présence de lumière produite par les humains pendant la nuit. Elle trouble la faune et la flore. Lorsque les éclairages sont très nombreux, ils nuisent à l'obscurité normale de la nuit. Ainsi, à la tombée de la nuit, on trouve beaucoup de lumière (lampes allumées sans cesse dans les rues...) partout dans le monde. La pollution lumineuse a des effets néfastes sur la santé humaine et aussi sur la faune. Par exemple, elle est la cause de la disparition de certains insectes. Beaucoup de pays sont désormais conscients des dangers de la photo-pollution et essaient de la diminuer.",
       image:'/pics-intervention-qa/Protéger la nature/photopollution.jpg',
+        audio: "/audios/Protéger la nature/photopollution.mp3",
       questions: [
         {
         starter: "Pourquoi",
@@ -568,6 +583,7 @@ export default {
         {
           text: "Le porter de femme est une discipline sportive qui consiste à réaliser une course d’obstacles tout en portant sa compagne. Celle-ci doit avoir un poids minimum désigné par les arbitres. Elle doit aussi porter un casque. Pour gagner, l’homme doit porter sa femme et terminer le parcours le plus rapidement possible sans laisser tomber sa compagne. La compétition accueille chaque année quelques milliers de spectateurs.",
           image:'/pics-intervention-qa/Sports/porter femme.jpg',
+            audio: "/audios/Sports/porterfemme.mp3",
           questions: [
             {
             starter: "Quel",
@@ -604,6 +620,7 @@ export default {
         {
           text: "La boxe aux échecs est un mélange de boxe et de jeu d’échecs. C’est un sport qui requiert à la fois de l’intelligence et de la force. Depuis 1992, ce sport s’est fait connaître en Angleterre et en France. Les joueurs doivent être compétents à la fois en boxe et aux échecs. L’objectif est de battre l'adversaire en alternant les tours d’échecs et de boxe. Les joueurs ont une pause après chaque tour. Les matchs peuvent être gagnés dans l’une ou l’autre des disciplines. Les tours d'échecs se jouent en version rapide.",
           image:'/pics-intervention-qa/Sports/chessboxing.jpg',
+            audio: "/audios/Sports/chessboxing.mp3",
           questions: [
             {
             starter: "Comment",
@@ -640,6 +657,7 @@ export default {
         {
           text: "Le hockey sous-marin est un sport où deux équipes s’affrontent sous l'eau. L'objectif est de pousser un palet de hockey fluorescent dans le but de l'adversaire. Les joueurs plongent au fond de l’eau en attendant le signal de l’un des deux arbitres. Au son du signal, ils sont autorisés à nager dans toutes les directions. Pour jouer au hockey sous-marin, il faut savoir nager, avoir des cannes de hockey, porter un masque de plongée et un bonnet. Les matchs sont diffusés sur des écrans pour les spectateurs.",
           image:'/pics-intervention-qa/Sports/hockey submarin.png',
+            audio: "/audios/Sports/hockeysubmarin.mp3",
           questions: [
             {
             starter: "Pourquoi",
