@@ -124,7 +124,7 @@ export default function TopicQuiz({ topic, phase, onFinish }) {
 
       {
         optionEnabled &&
-        <ChatMessage text="Super! Tu peux choisir la proposition qui te semble correcte depuis les propositions suivantes:">
+        <ChatMessage text="Super! Tu peux choisir la proposition qui te semble correcte parmi les propositions suivantes:">
           <Card variant="outlined">
             <CardContent>
               <FormControl component="fieldset" className={classes.formControl}>
