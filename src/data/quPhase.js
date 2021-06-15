@@ -15,7 +15,7 @@ export default {
             {
               starter: "C'est quoi / Qu'est ce que",
               options: [
-                "Une maladie intestinale très contagieuses",
+                "Une maladie intestinale très contagieuse",
               ]
             },
             {
@@ -290,7 +290,7 @@ export default {
           {
             starter: "Comment",
             options:[
-              "Les singes reconnaissent les les ennemis par l'odeur",
+              "Les singes reconnaissent les ennemis par l'odeur",
             ]
           },
           {
@@ -465,7 +465,7 @@ export default {
     "proteger-nature": {
       slides: [
         {
-          text: "La géothermie est l'utilisation de la chaleur des roches profondes pour récupérer de l'énergie. La température à la surface de la terre est basse mais augmente avec la profondeur. Lorsqu'elle atteint plus de 150 degrés, il est possible de produire de l'électricité à partir de cette chaleur. La géothermie est considérée comme une source d’énergie renouvelable et a beaucoup d’avantages. Mais y a seulement vingt-et-un pays du monde qui utilisent la géothermie pour produire de l’électricité. ",
+          text: "La géothermie est l'utilisation de la chaleur des roches profondes pour récupérer de l'énergie. La température à la surface de la terre est basse mais augmente avec la profondeur. Lorsqu'elle atteint plus de 150 degrés, il est possible de produire de l'électricité à partir de cette chaleur. La géothermie est considérée comme une source d’énergie renouvelable et a beaucoup d’avantages. Mais il y a seulement vingt-et-un pays du monde qui utilisent la géothermie pour produire de l’électricité. ",
           image:'/pics-intervention-qa/Protéger la nature/geothermie.png',
             audio: "/audios/Protéger la nature/geothermie.mp3",
           questions: [
@@ -478,7 +478,7 @@ export default {
           {
             starter: "C'est quoi",
             options:[
-              "C'est une énergie qui ne s'épuise pas'",
+              "C'est une énergie qui ne s'épuise pas",
             ]
           },
           {
