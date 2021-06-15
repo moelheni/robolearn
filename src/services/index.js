@@ -16,7 +16,7 @@ firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore();
 
-export const addIdentifiant = async (identifiant) => {
+export const addIdentifiant = async ({identifiant, help}) => {
   const snapshot = await db.doc(`users/${identifiant}`).get()
   if (snapshot.exists) {
     console.log('identifiant exists')
@@ -24,6 +24,7 @@ export const addIdentifiant = async (identifiant) => {
   } else {
     await db.collection(`users`).doc(identifiant).set({
       identifiant,
+      help,
       createdAt: firebase.firestore.Timestamp.now()
     })
 
