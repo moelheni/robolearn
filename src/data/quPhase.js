@@ -3,7 +3,7 @@ export default {
       slides: [
         {
           text: "Louis Pasteur naît en 1822. En 1865, il découvre une façon de conserver les aliments plus longtemps : on appelle cela la pasteurisation. Dans les années 1880, alors qu’il combattait le choléra chez les animaux, il lui vint une idée géniale : introduire la maladie en petite quantité pour que le corps renforce sa capacité à se défendre. C'est le principe de la vaccination ! Il teste ce principe auprès d'un petit garçon atteint de rage. En 1888, Pasteur ouvre un institut dédié à la vaccination et à la recherche.",
-          image: "/pics-intervention-qa/Il était une fois la science/LouisPasteur.jpg",
+          image: "/pics-intervention-qa/Il était une fois les sciences/LouisPasteur.jpg",
             audio: "/audios/Il était une fois la science/LouisPasteur.mp3",
           questions: [
             {
@@ -41,7 +41,7 @@ export default {
         },
         {
           text: "Rosalind Franklin est née en 1920, elle est pionnière de la biologie. A 11 ans, Rosalind intègre un des seuls établissements de Londres où la physique et la chimie sont enseignées aux jeunes filles. Au cours de ses recherches, elle découvre la structure de l'ADN. Malheureusement, la santé de Rosalind se dégrade suite à un cancer. Elle décède finalement, à seulement 38 ans. En 1962, ce sont ses collègues qui obtiennent le prix Nobel pour la découverte de la structure de l'ADN, sans parler de son travail. Rosalind Franklin, malgré son rôle primordial, ne sera pas récompensée à titre posthume.",
-          image: "/pics-intervention-qa/Il était une fois la science/RosalindFranklin.jpg",
+          image: "/pics-intervention-qa/Il était une fois les sciences/RosalindFranklin.jpg",
             audio: "/audios/Il était une fois la science/RosalindFranklin.mp3",
           questions: [
             {
@@ -79,7 +79,7 @@ export default {
         },
         {
           text: "Alan Turing est un célèbre mathématicien anglais qui est né en 1912. Élève surdoué, son génie est vite repéré par ses proches et ses professeurs : il aurait appris à lire seul en trois semaines. Pendant la Seconde guerre mondiale, Turing a travaillé sur le déchiffrement des messages de l'armée allemande. Cela a permis aux Alliés de prendre de l'avance sur leurs adversaires. Turing est aussi un pionnier de l'informatique : il a travaillé sur les premiers ordinateurs.",
-          image: "/pics-intervention-qa/Il était une fois la science/AlanTuring.jpg",
+          image: "/pics-intervention-qa/Il était une fois les sciences/AlanTuring.jpg",
             audio: "/audios/Il était une fois la science/AlanTuring.mp3",
           questions: [
             {
