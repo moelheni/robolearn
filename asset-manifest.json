@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/robolearn/static/css/main.93466ea4.chunk.css",
+    "main.js": "/robolearn/static/js/main.e26324c7.chunk.js",
+    "main.js.map": "/robolearn/static/js/main.e26324c7.chunk.js.map",
+    "runtime-main.js": "/robolearn/static/js/runtime-main.fd501727.js",
+    "runtime-main.js.map": "/robolearn/static/js/runtime-main.fd501727.js.map",
+    "static/js/2.c83a9878.chunk.js": "/robolearn/static/js/2.c83a9878.chunk.js",
+    "static/js/2.c83a9878.chunk.js.map": "/robolearn/static/js/2.c83a9878.chunk.js.map",
+    "static/js/3.e5acf80b.chunk.js": "/robolearn/static/js/3.e5acf80b.chunk.js",
+    "static/js/3.e5acf80b.chunk.js.map": "/robolearn/static/js/3.e5acf80b.chunk.js.map",
+    "index.html": "/robolearn/index.html",
+    "static/css/main.93466ea4.chunk.css.map": "/robolearn/static/css/main.93466ea4.chunk.css.map",
+    "static/js/2.c83a9878.chunk.js.LICENSE.txt": "/robolearn/static/js/2.c83a9878.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/robolearn/static/media/TimKid.8d31aefa.ttf",
+    "static/media/robot-appli.9d9a8d49.svg": "/robolearn/static/media/robot-appli.9d9a8d49.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd501727.js",
+    "static/js/2.c83a9878.chunk.js",
+    "static/css/main.93466ea4.chunk.css",
+    "static/js/main.e26324c7.chunk.js"
+  ]
+}
