@@ -13,7 +13,7 @@ export default function FirstQuiz() {
   const [nextTopic, setNextTopic] = useState(null)
   const [endQuiz, setEndQuiz] = useState(false)
   const { user } = useContext(UserContext)
-
+  console.log({user})
   useEffect(() => {
     ;(async () => {
       if (topics) {

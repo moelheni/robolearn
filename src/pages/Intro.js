@@ -26,13 +26,16 @@ export default function PreExplorationOutro() {
   const handleIdentifiant = async (e) => {
     e.preventDefault()
     const newUser = await addIdentifiant(identifiant)
-    setUser(newUser)
+    setUser({
+      ...newUser,
+      identified: true
+    })
   }
 
   return (
     <>
       {
-        user &&
+        user.identified &&
         <Redirect to="/first-quiz/histoire-de-la-science" />
       }
       <IntroContainer>

@@ -19,9 +19,18 @@ import PostExplorationIntroFinished from "./pages/PostExplorationIntroFinished";
 import Intro from "./pages/Intro";
 import UserContext from "./context/UserContext";
 import { useEffect, useState } from "react";
+import Home from "./pages/Home";
 
 function App() {
-  const [user, setUser] = useState(null)
+  const [user, updateUser] = useState({
+    identified: false
+  })
+  const setUser = (u) => {
+    updateUser({
+      ...user,
+      ...u
+    })
+  }
   const [notLogin, setNotLogin] = useState(false)
   useEffect(() => {
     if (user) {
@@ -46,7 +55,10 @@ function App() {
             <Redirect to="/" />
           }
           <Switch>
-            <Route exact path="/">
+          <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/intro">
               <Intro />
             </Route>
             <Route path="/first-quiz/:id">

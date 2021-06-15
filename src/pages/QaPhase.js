@@ -111,39 +111,49 @@ export default function QaPhase() {
             {
               showQuestions && questionIndex < 5 &&
               <>
-                <ChatMessage text={
-                  `Voici la réponse à ta question. Coche-la et essaie de trouver une question qui lui correspond. Ta question peut commencer par '${topic.slides[slideIndex].questions[questionIndex].starter}'`
-                }>
-                 
-                  <Card variant="outlined">
-                    <CardContent>
-                      <FormControl component="fieldset" className={classes.formControl}>
-                        <FormGroup>
-                          {
-                            topic.slides[slideIndex].questions[questionIndex].options.map(op => {
-                              return <FormControlLabel
-                                control={
-                                  <Checkbox
-                                    color="primary"
-                                    onChange={handleChange}
-                                    checked={!!state[op]}
-                                    name={op} />
-                                }
-                                label={op}
-                              />
-                            })
-                          }
-                        </FormGroup>
-                      </FormControl>
-                    </CardContent>
-                  </Card>
-                </ChatMessage>
+                {
+                  user.help &&
+                  <ChatMessage text={
+                    `Voici la réponse à ta question. Coche-la et essaie de trouver une question qui lui correspond. Ta question peut commencer par '${topic.slides[slideIndex].questions[questionIndex].starter}'`
+                  }>
+                  
+                    <Card variant="outlined">
+                      <CardContent>
+                        <FormControl component="fieldset" className={classes.formControl}>
+                          <FormGroup>
+                            {
+                              topic.slides[slideIndex].questions[questionIndex].options.map(op => {
+                                return <FormControlLabel
+                                  control={
+                                    <Checkbox
+                                      color="primary"
+                                      onChange={handleChange}
+                                      checked={!!state[op]}
+                                      name={op} />
+                                  }
+                                  label={op}
+                                />
+                              })
+                            }
+                          </FormGroup>
+                        </FormControl>
+                      </CardContent>
+                    </Card>
+                  </ChatMessage>
+                }
 
                 {
-                  Object.keys(state).length > 0 &&
+                  !user.help &&
+                  <ChatMessage text={
+                    `Maintenant, pose-moi une question sur ce texte. Ta question peut commencer par '${topic.slides[slideIndex].questions[questionIndex].starter}'`
+                  } />
+                }
+
+                {
+                  (Object.keys(state).length > 0 || !user.help) &&
                   <>
                     <ChatMessage text={
-                      `Super! Tu peux maintenant poser ta question. Prends ton temps pour formuler.`
+                      user.help ? `Super! Tu peux maintenant poser ta question. Prends ton temps pour formuler.` : 'Attention, la réponse à ta question ne doit pas figurer dans le texte'
                     } />
 
                     <TextField onChange={handleChangeQuestion} id="standard-basic" label="Mets ta question ici" fullWidth />
