@@ -89,7 +89,7 @@ export default function QaPhase() {
                 ))
               }
               <audio controls>
-                <source src={topic.slides[slideIndex].audio} type="audio/mp3"></source>
+                <source src={"https://filedn.eu/lqx4QVrEq1Hjo1WnXF0tGH4" + topic.slides[slideIndex].audio} type="audio/mp3"></source>
               Your browser does not support the audio element.
               </audio>
 
@@ -156,7 +156,7 @@ export default function QaPhase() {
                       user.help ? `Super! Tu peux maintenant poser ta question. Prends ton temps pour formuler.` : 'Attention, la réponse à ta question ne doit pas figurer dans le texte'
                     } />
 
-                    <TextField onChange={handleChangeQuestion} id="standard-basic" label="Mets ta question ici" fullWidth />
+                    <TextField value={question} onChange={handleChangeQuestion} id="standard-basic" label="Mets ta question ici" fullWidth />
 
                     <ContentButtonWrapper>
                       <Button onClick={nextQuestion} variant="contained" disabled={!question}>Soumettre</Button>

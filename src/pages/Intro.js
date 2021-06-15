@@ -25,7 +25,10 @@ export default function PreExplorationOutro() {
 
   const handleIdentifiant = async (e) => {
     e.preventDefault()
-    const newUser = await addIdentifiant(identifiant)
+    const newUser = await addIdentifiant({
+      identifiant,
+      help: user.help
+    })
     setUser({
       ...newUser,
       identified: true
