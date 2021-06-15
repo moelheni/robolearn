@@ -1,5 +1,5 @@
 import { Card, CardContent, Checkbox, FormControl, FormControlLabel, FormGroup, TextField, Typography } from "@material-ui/core";
-import React, { useContext, useState } from "react"
+import React, { useContext, useEffect, useRef, useState } from "react"
 import Resize from "react-resize-layout/dist/Resize";
 import ResizeHorizon from "react-resize-layout/dist/ResizeHorizon";
 import { Redirect, useParams } from "react-router";
@@ -31,6 +31,23 @@ export default function QaPhase() {
   const [state, setState] = React.useState({})
 
   const { user } = useContext(UserContext)
+
+  const previousUrl = useRef('');
+  const audioRef = useRef();
+
+  useEffect(() => {
+    if (topic.slides[slideIndex]) {
+      if (previousUrl.current === topic.slides[slideIndex].audio) {
+        return;
+      }
+  
+      if (audioRef.current) {
+        audioRef.current.load();
+      }
+  
+      previousUrl.current = topic.slides[slideIndex].audio;
+    }
+  }, [slideIndex]);
 
   const handleChange = (event) => {
     setState({ [event.target.name]: event.target.checked });
@@ -88,7 +105,7 @@ export default function QaPhase() {
                   <p>{line} <br /></p>
                 ))
               }
-              <audio controls>
+              <audio controls ref={audioRef}>
                 <source src={"https://filedn.eu/lqx4QVrEq1Hjo1WnXF0tGH4" + topic.slides[slideIndex].audio} type="audio/mp3"></source>
               Your browser does not support the audio element.
               </audio>
