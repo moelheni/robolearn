@@ -88,6 +88,11 @@ export default function QaPhase() {
                   <p>{line} <br /></p>
                 ))
               }
+              <audio controls>
+                <source src={topic.slides[slideIndex].audio} type="audio/mp3"></source>
+              Your browser does not support the audio element.
+              </audio>
+
             </StoryWrapper>
             {
               !showQuestions &&
