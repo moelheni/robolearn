@@ -24,8 +24,8 @@ export default function Home() {
       <Redirect to="/intro" />
     }
     <select onChange={handleChange}>
-      <option value="1">avec assitance</option>
-      <option value="0">sans</option>
+      <option value="1">experimental</option>
+      <option value="0">control</option>
     </select>
     <button onClick={done}>Go</button>
   </div>
