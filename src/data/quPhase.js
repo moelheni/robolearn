@@ -668,7 +668,7 @@ export default {
           {
             starter: "Comment",
             options:[
-              "Il y'a des caméras sous l'eau pour enregistrer",
+              "Il y a des caméras sous l'eau pour enregistrer",
             ]
           },
           {
