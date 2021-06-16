@@ -207,7 +207,7 @@ export default function Exploration() {
               </ProgressWrapper>
             </div>
             {
-              videoSeen.length >= 6 &&
+              videoSeen.length >= 3 &&
               <div>
                <Button onClick={endExploration} variant="contained">Fin exploration</Button>
               </div>
@@ -389,14 +389,14 @@ export default function Exploration() {
                   } />
                 </AgentSpace>
               }
-              {/*
+              {
                 questionAsked &&
                 <AgentSpace>
                    <ChatMessage text={
                     `Tu peux continuer ton exploration comme tu veux.`
                   } />
                 </AgentSpace>
-             } */}
+             }
               {
                 noVideoAdded &&
                 <AgentSpace>
