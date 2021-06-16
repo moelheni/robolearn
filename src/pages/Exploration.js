@@ -207,7 +207,7 @@ export default function Exploration() {
               </ProgressWrapper>
             </div>
             {
-              videoSeen.length >= 3 &&
+              videoSeen.length >= 4 &&
               <div>
                <Button onClick={endExploration} variant="contained">Fin exploration</Button>
               </div>
