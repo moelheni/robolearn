@@ -359,7 +359,7 @@ export default function Exploration() {
                     <>
                       <ChatMessage text={
                         countItems - doneItems === 0
-                        ? `Poser une question par rapport à la vidéo que tu viens de voir`
+                        ? `Tu peux maintenant me poser une question par rapport à la vidéo que tu viens de voir si tu veux.`
                         : `Mais pour ça, tu dois tout d'abord me poser une question par rapport à la vidéo que tu viens de voir.`
                       } />
 
@@ -389,12 +389,12 @@ export default function Exploration() {
                   } />
                 </AgentSpace>
               }
-              {
+              {/*
                 questionAsked &&
                 <AgentSpace>
                    <ChatMessage text={
                     `Tu peux continuer ton exploration comme tu veux.`
-                  } />
+                  }*/} />
                 </AgentSpace>
              }
               {
