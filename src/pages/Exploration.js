@@ -389,14 +389,14 @@ export default function Exploration() {
                   } />
                 </AgentSpace>
               }
-              {/*
+              {/*{
                 questionAsked &&
                 <AgentSpace>
                    <ChatMessage text={
                     `Tu peux continuer ton exploration comme tu veux.`
-                  }*/} />
+                  } />
                 </AgentSpace>
-             }
+             } */}
               {
                 noVideoAdded &&
                 <AgentSpace>
