@@ -11,7 +11,7 @@ export const getVideos = async () => {
   const decodedData = decoder.decode(result.value);
   const { data: csvData } = await Papa.parse(decodedData)
 
-  return csvData.slice(1).reduce((ac, e) => {
+  return csvData.slice(1).filter(e => !!e && !!e[0]).reduce((ac, e) => {
     const topicKey = topicKeys[e[0].trim()]
     const subTopicKey = e[1]
 
