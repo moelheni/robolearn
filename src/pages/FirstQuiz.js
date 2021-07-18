@@ -12,8 +12,7 @@ export default function FirstQuiz() {
   const [topics, setTopics] = useState(null)
   const [nextTopic, setNextTopic] = useState(null)
   const [endQuiz, setEndQuiz] = useState(false)
-  const { user } = useContext(UserContext)
-  console.log({user})
+
   useEffect(() => {
     ;(async () => {
       if (topics) {

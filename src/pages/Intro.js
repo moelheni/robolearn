@@ -39,7 +39,7 @@ export default function PreExplorationOutro() {
     <>
       {
         user.identified &&
-        <Redirect to="/first-quiz/histoire-de-la-science" />
+        <Redirect to={user.url || "/first-quiz/histoire-de-la-science"} />
       }
       <IntroContainer>
         <Left>

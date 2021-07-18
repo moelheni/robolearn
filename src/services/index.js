@@ -33,6 +33,13 @@ export const addIdentifiant = async ({identifiant, help}) => {
   }
 }
 
+export const updateLastURl = async (identifiant, url) => {
+  await db.collection(`users`).doc(identifiant).update({
+    url
+  })
+}
+
+
 export const addUserInput = async (identifiant, phase, id, data) => {
   await db.collection(`users`).doc(identifiant).collection(phase).doc(id.replace(/ /g, '_')).set({
     ...data,

@@ -20,10 +20,23 @@ import Intro from "./pages/Intro";
 import UserContext from "./context/UserContext";
 import { useEffect, useState } from "react";
 import Home from "./pages/Home";
+import { addUserInput, updateLastURl } from "./services";
 
-function App() {
+function RouteHOC (props) {
+  useEffect(() => {
+    console.log(props.location.pathname)
+    ;(async function () {
+      await updateLastURl(props.user.identifiant, props.location.pathname)
+    })()
+  }, [props.location.pathname])
+  return <>
+    {props.render(props)}
+  </>
+}
+
+function App(props) {
   const [user, updateUser] = useState({
-    identified: false
+    identified: false,
   })
   const setUser = (u) => {
     updateUser({
@@ -33,19 +46,20 @@ function App() {
   }
   const [notLogin, setNotLogin] = useState(false)
   useEffect(() => {
-    if (user) {
+    if (user && user.identified) {
       window.localStorage.setItem('user', JSON.stringify(user))
     }
   }, [user])
 
   useEffect(() => {
     const savedUser = window.localStorage.getItem('user')
-    if (savedUser) {
+    if (savedUser && JSON.parse(savedUser).identified) {
       setUser(JSON.parse(savedUser))
     } else {
       setNotLogin(true)
     }
   }, [])
+
   return (
     <div>
       <UserContext.Provider value={{user, setUser}}>
@@ -61,45 +75,24 @@ function App() {
             <Route exact path="/intro">
               <Intro />
             </Route>
-            <Route path="/first-quiz/:id">
-              <FirstQuiz />
-            </Route>
+            <Route path="/first-quiz/:id" component={(props) => (<RouteHOC {...props} user={user} render={FirstQuiz} />)} />
+            <Route exact path="/spe-quiz/:id"  component={(props) => (<RouteHOC {...props} user={user} render={SpeQuiz} />)} />
 
-            <Route exact path="/spe-quiz/:id">
-              <SpeQuiz />
-            </Route>
+            <Route path="/spe-quiz/:id/:exploration" component={(props) => (<RouteHOC {...props} user={user} render={SpeQuiz} />)} />
 
-            <Route path="/spe-quiz/:id/:exploration">
-              <SpeQuiz />
-            </Route>
+            <Route path="/end-quiz" component={(props) => (<RouteHOC {...props} user={user} render={EndQuiz} />)} />
 
-            <Route path="/end-quiz">
-              <EndQuiz />
-            </Route>
+            <Route path="/qa-phase/:id/:nextTopic" component={(props) => (<RouteHOC {...props} user={user} render={QaPhase} />)} />
 
-            <Route path="/qa-phase/:id/:nextTopic">
-              <QaPhase />
-            </Route>
+            <Route path="/pre-exploration-intro/:id"  component={(props) => (<RouteHOC {...props} user={user} render={PreExplorationIntro} />)} />
 
-            <Route path="/pre-exploration-intro/:id">
-              <PreExplorationIntro />
-            </Route>
+            <Route path="/pre-exploration-outro/:id" component={(props) => (<RouteHOC {...props} user={user} render={PreExplorationOutro} />)} />
 
-            <Route path="/pre-exploration-outro/:id">
-              <PreExplorationOutro />
-            </Route>
+            <Route path="/exploration/:id" component={(props) => (<RouteHOC {...props} user={user} render={Exploration} />)} />
 
-            <Route path="/exploration/:id">
-              <Exploration />
-            </Route>
+            <Route path="/post-exploration/:id" component={(props) => (<RouteHOC {...props} user={user} render={PostExploration} />)} />
 
-            <Route path="/post-exploration/:id">
-              <PostExploration />
-            </Route>
-
-            <Route path="/post-exploration-finished/:id">
-              <PostExplorationIntroFinished />
-            </Route>
+            <Route path="/post-exploration-finished/:id" component={(props) => (<RouteHOC {...props} user={user} render={PostExplorationIntroFinished} />)} />
             
           </Switch>
         </Router>
