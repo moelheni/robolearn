@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { Redirect } from "react-router"
 import UserContext from "../context/UserContext"
 
@@ -10,6 +10,10 @@ export default function Home() {
   }
 
   const { setUser } = useContext(UserContext)
+
+  useEffect(() => {
+    window.localStorage.removeItem('user')
+  }, [])
 
   const done = () => {
     setUser({
