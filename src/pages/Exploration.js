@@ -360,7 +360,7 @@ export default function Exploration() {
                       <ChatMessage text={
                         countItems - doneItems === 0
                         ? `Tu peux maintenant me poser une question par rapport à la vidéo que tu viens de voir si tu veux.`
-                        : `Mais pour ça, tu dois tout d'abord me poser une question par rapport à la vidéo que tu viens de voir.`
+                        : `Mais pour ça, tu dois tout d'abord me poser une question divergente par rapport à la vidéo que tu viens de voir.`
                       } />
 
                       <ChatMessage text={
