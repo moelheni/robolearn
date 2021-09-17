@@ -52,7 +52,7 @@ export default function PreExplorationOutro() {
           </div>
         </Left>
         <Right>
-          <h1>BIENVENUE SUR <br /> "CURIOUS KIDS"</h1>
+          <h1>BIENVENUE SUR <br /> "KIDS ASK"</h1>
 
           <p style={{ fontSize: "1.4em", maxWidth: '500px', margin: 'auto' }}>
             JE M'APPELLE "CHATTY" ET AUJOURD'HUI, ON VA FAIRE DES ACTIVITES ENSEMBLE. <br /> <br />
