@@ -16,6 +16,8 @@ export default function TopicQuiz({ topic, phase, onFinish }) {
   const classes = useStyles()
   const { user } = useContext(UserContext)
 
+  console.log({ user })
+
   const [state, setState] = React.useState({})
   const [confidence, setConfidence] = useState(0)
 

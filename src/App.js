@@ -38,6 +38,9 @@ function App(props) {
   const [user, updateUser] = useState({
     identified: false,
   })
+
+  console.log({ user })
+
   const setUser = (u) => {
     updateUser({
       ...user,
