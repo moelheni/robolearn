@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# RoboLearn Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A trivia game for kids
 
 ## Available Scripts
 
